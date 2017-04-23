@@ -244,6 +244,213 @@
         </subjects>
       </useCase>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="44cf6880-eaae-4365-870f-6490e7ceb8f6"
+        name="input"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b512abcb-d7e8-4e31-a9f4-4dc67f0c2528"
+        name="bingManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="af5e05e1-b63a-47af-9371-9786629405ef"
+        name="searchVM"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e1a72b23-a1b9-4df1-9a9b-a66db45d924f"
+            isDerived="false"
+            sourceEndRoleName="searchVM"
+            targetEndRoleName="bingManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b512abcb-d7e8-4e31-a9f4-4dc67f0c2528"
+              LastKnownName="bingManager"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f034d95-0f90-4715-97f7-6e4f3f5214b6"
+                  name="searchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f1301d0-93e0-4204-80c9-fa1a61679706"
+                  name="bingManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6db7f152-c713-4770-bdd5-bd4e02764815"
+            isDerived="false"
+            sourceEndRoleName="searchVM"
+            targetEndRoleName="input"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="44cf6880-eaae-4365-870f-6490e7ceb8f6"
+              LastKnownName="input"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4593bab3-7cd6-4ebe-8b43-773c17fdd0ec"
+                  name="searchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9fe4a5a0-00fb-4bb9-8d53-3fe9f09b9bea"
+                  name="input"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e1f9798f-5b65-4d6a-bf20-13628426cbd1"
+            isDerived="false"
+            sourceEndRoleName="searchVM"
+            targetEndRoleName="searchResult"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d2144239-836e-4886-937b-7c3267ac6ce5"
+              LastKnownName="searchResult"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe9df4e7-b35f-4a54-ab4f-4f99fad29d35"
+                  name="searchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0007b751-0d0d-48c7-bc78-ba50eb3535b6"
+                  name="searchResult"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d2144239-836e-4886-937b-7c3267ac6ce5"
+        name="searchResult"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="134f974b-6aa9-46a1-8394-09b61d91ef09"
+            isDerived="false"
+            sourceEndRoleName="searchResult"
+            targetEndRoleName="input"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="44cf6880-eaae-4365-870f-6490e7ceb8f6"
+              LastKnownName="input"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e2862b6-1d79-4324-8934-0dc767149a51"
+                  name="searchResult"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2df90b5c-ab8c-4d57-bbf7-3ff0099d31ff"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="41999f24-d0c4-4afe-a234-68c567722951"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bac73c84-8fd4-45b9-a34e-601a18831c36"
+                  name="input"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
