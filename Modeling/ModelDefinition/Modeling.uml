@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="fd423be3-219d-428c-b855-245467d7244d"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,252 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+        name="Sentiment Analyzer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b7cf7079-cb82-4947-b8fa-b7d90fee2fe9"
+        name="Analyze Sentiment"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="86d122aa-0f15-43bd-9361-1869e97c89b7">
+            <useCaseMoniker
+              Id="84c4819a-1910-4eed-bf00-2652673a03bd"
+              LastKnownName="Analyze results"
+              LastKnownLocation="Modeling.uml" />
+          </include>
+          <include
+            Id="54337282-f5a1-41d3-9e41-cddec44265a2">
+            <useCaseMoniker
+              Id="30ddddfa-b86d-485f-8743-23e5fea67318"
+              LastKnownName="Search topic"
+              LastKnownLocation="Modeling.uml" />
+          </include>
+          <include
+            Id="4a0ebcd8-4eee-45d2-be0d-f5681cf30dce">
+            <useCaseMoniker
+              Id="64b8d2ec-d6bd-4f23-bfe3-f0f6086ae703"
+              LastKnownName="Evaluate results"
+              LastKnownLocation="Modeling.uml" />
+          </include>
+          <include
+            Id="16d6f6d5-0517-46bc-b4f1-386d5c1e0b1a">
+            <useCaseMoniker
+              Id="aeb57adf-d078-4385-a1b2-ad368214f0cf"
+              LastKnownName="Refine results"
+              LastKnownLocation="Modeling.uml" />
+          </include>
+          <include
+            Id="3fa2c284-f4b0-4086-a852-1f50632e6f6d">
+            <useCaseMoniker
+              Id="043fd496-84b2-421f-86a7-66dba66f22de"
+              LastKnownName="Display graphical result"
+              LastKnownLocation="Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+            LastKnownName="Sentiment Analyzer"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="30ddddfa-b86d-485f-8743-23e5fea67318"
+        name="Search topic"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a4059c75-1441-4323-a694-f32616fa5e19"
+            isDerived="false"
+            sourceEndRoleName="Search"
+            targetEndRoleName="Bing"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="27c00dbe-18b0-4aee-8aac-bfdf429137f1"
+              LastKnownName="Bing"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a41d64f-2dd4-40b1-91bf-a9aa96118753"
+                  name="Search"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5453df8-5bf5-4f5c-91c2-beab98f299bc"
+                  name="Bing"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+            LastKnownName="Sentiment Analyzer"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="84c4819a-1910-4eed-bf00-2652673a03bd"
+        name="Analyze results"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+            LastKnownName="Sentiment Analyzer"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="64b8d2ec-d6bd-4f23-bfe3-f0f6086ae703"
+        name="Evaluate results"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+            LastKnownName="Sentiment Analyzer"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="043fd496-84b2-421f-86a7-66dba66f22de"
+        name="Display graphical result"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+            LastKnownName="Sentiment Analyzer"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="dff9c3fb-c68f-4228-8e6e-e6f5258835e9"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="eeced31d-d507-44ba-8b6c-09d143e99f29"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Search"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b7cf7079-cb82-4947-b8fa-b7d90fee2fe9"
+              LastKnownName="Analyze Sentiment"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98777482-8a14-434c-b89e-fe11b6dae0dd"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed5ea05e-b4c1-44f6-9381-42b1c2ebab30"
+                  name="Search"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="27c00dbe-18b0-4aee-8aac-bfdf429137f1"
+        name="Bing"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aeb57adf-d078-4385-a1b2-ad368214f0cf"
+        name="Refine results"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dba78a10-e448-45ba-a55e-e4cb18005079"
+            LastKnownName="Sentiment Analyzer"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
