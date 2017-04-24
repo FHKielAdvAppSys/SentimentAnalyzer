@@ -53,7 +53,7 @@
         <classShapeMoniker Id="6813ae6c-5c1e-4c83-b95d-838fd10e020c" />
       </nodes>
     </associationConnector>
-    <classShape Id="fef0cee2-de75-4c3b-9ece-9eeda937b2b3" absoluteBounds="4.25, 0.5, 2, 1.2226562251647311" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="fef0cee2-de75-4c3b-9ece-9eeda937b2b3" absoluteBounds="4.25, 0.5, 2, 1.2226562251647311" hideQualifiedName="false" showFullSignature="true" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="7d5eacc6-c6f1-41c2-87f4-474f4f8d44ba" LastKnownName="ChildVM" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="16b384d4-89b2-49f1-8786-c79286898650" absoluteBounds="4.265, 0.88999999999999968, 1.9700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
