@@ -20,7 +20,10 @@ namespace SentimentAnalyzer.Service
         /// <returns></returns>
         public List<SearchResult> search(string topic)
         {
-            throw new NotImplementedException();
+            List<SearchResult> mockListResult = new List<SearchResult>();
+            SearchResult mockResult = new SearchResult();
+            mockListResult.Add(mockResult);
+            return mockListResult;
         }
     }
 }
