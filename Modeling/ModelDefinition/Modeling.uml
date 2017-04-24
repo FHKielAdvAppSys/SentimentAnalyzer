@@ -338,42 +338,6 @@
         </generalsInternal>
         <ownedOperationsInternal>
           <operation
-            Id="c4b9f4b9-3422-48d7-af3b-31b58e78868f"
-            name="Search"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f6bc690d-2306-4d9e-8768-577fbd8efe5d"
-                  name="topic"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="549034fe-856b-426d-9b0d-480de43aa3e4"
-                  direction="Return">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                      LastKnownName="List&lt;SearchResult&gt;"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="32af560f-f4f9-48b2-8fc1-4158687e4dbe"
             name="Search"
             isLeaf="false"
@@ -580,20 +544,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="3a7ab37d-e640-426c-b3d9-95168ac93b43"
+            Id="91e0610f-8969-4bcb-a703-6911370fd68d"
             isDerived="false"
             sourceEndRoleName="SearchVM"
-            targetEndRoleName="BingService"
+            targetEndRoleName="IBingService"
             isLeaf="false"
             isAbstract="false">
-            <classMoniker
-              Id="b512abcb-d7e8-4e31-a9f4-4dc67f0c2528"
-              LastKnownName="BingService"
+            <interfaceMoniker
+              Id="c26add11-afbc-473d-9d81-eadbd6cdf6bb"
+              LastKnownName="IBingService"
               LastKnownLocation="Modeling.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="462d795a-0e9f-41e9-88a0-51e5f8913771"
+                  Id="be764bed-8fff-456b-a7b0-2db7a2355cd1"
                   name="SearchVM"
                   isLeaf="false"
                   isStatic="false"
@@ -606,8 +570,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="94c8e325-c12e-43ea-8148-e6c1fbd1b9ed"
-                  name="BingService"
+                  Id="3d535d79-7a03-4e33-bbc5-2ba433353373"
+                  name="IBingService"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1079,9 +1043,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <classMoniker
-                Id="af5e05e1-b63a-47af-9371-9786629405ef"
-                LastKnownName="SearchVM"
+              <interfaceMoniker
+                Id="9874f96d-5ee8-4378-90e4-b6187c5781c3"
+                LastKnownName="ISearchVM"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -1098,9 +1062,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <classMoniker
-                Id="af5e05e1-b63a-47af-9371-9786629405ef"
-                LastKnownName="SearchVM"
+              <interfaceMoniker
+                Id="9874f96d-5ee8-4378-90e4-b6187c5781c3"
+                LastKnownName="ISearchVM"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -1123,12 +1087,13 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="482ff2b6-720b-4797-a5c0-56deeb8081cb"
+                  Id="af86cb23-9480-47d5-abaa-9a70c9935a58"
                   name="bingService"
-                  direction="In">
+                  direction="In"
+                  isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="3846a685-817a-4e79-a4b7-5e562caf584b"
+                    <interfaceMoniker
+                      Id="c26add11-afbc-473d-9d81-eadbd6cdf6bb"
                       LastKnownName="IBingService"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
@@ -1136,13 +1101,14 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5434c10e-9b68-4830-b92e-58fcdc73ad3f"
+                  Id="f520bd3d-2217-4243-92c7-e5b2e74b66ce"
                   name="searchVM"
-                  direction="In">
+                  direction="In"
+                  isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="af5e05e1-b63a-47af-9371-9786629405ef"
-                      LastKnownName="SearchVM"
+                    <interfaceMoniker
+                      Id="9874f96d-5ee8-4378-90e4-b6187c5781c3"
+                      LastKnownName="ISearchVM"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
