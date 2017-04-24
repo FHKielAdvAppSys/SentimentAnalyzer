@@ -55,8 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\IBingService.cs" />
     <Compile Include="Core\ISearchVM.cs" />
     <Compile Include="Model\SearchResult.cs" />
+    <Compile Include="Service\BingService.cs" />
     <Compile Include="ViewModel\ChildVM.cs" />
     <Compile Include="ViewModel\MainVM.cs" />
     <Compile Include="ViewModel\SearchVM.cs" />
@@ -100,9 +102,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Service\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
