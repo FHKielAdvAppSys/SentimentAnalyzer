@@ -8,5 +8,13 @@ namespace SentimentAnalyzer.ViewModel
 {
     class ChildVM
     {
+        // instance of MainVM
+        MainVM mainVM = new MainVM();
+
+        // constructor with MainVM parameter
+        public ChildVM (MainVM mVM)
+        {
+            mainVM = mVM;
+        }
     }
 }
