@@ -10,13 +10,13 @@ namespace SentimentAnalyzer.Core
     /// <summary>
     /// Interface for Bing Service
     /// </summary>
-    interface IBingService
+    public interface IBingService
     {
         /// <summary>
         /// Bing search API call functionality
         /// </summary>
         /// <param name="topic"></param>
         /// <returns></returns>
-        List<SearchResult> search(string topic);
+        List<SearchResult> Search(string topic);
     }
 }

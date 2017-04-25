@@ -1,4 +1,5 @@
-﻿using SentimentAnalyzer.Core;
+﻿using Microsoft.Practices.Prism.Commands;
+using SentimentAnalyzer.Core;
 using SentimentAnalyzer.Model;
 using SentimentAnalyzer.Service;
 using System;
@@ -9,45 +10,40 @@ using System.Threading.Tasks;
 
 namespace SentimentAnalyzer.ViewModel
 {
-    class SearchVM : ISearchVM
+    public class SearchVM : ChildVM, ISearchVM
     {
         // Member variables
-        private List<SearchResult> _results;
-        //public SearchCommand DelegateCommand;
-        private String _topic;
+        public DelegateCommand SearchCommand;
 
-        // getter and setter
+        private String _topic;
         public String Topic
         {
-            get
-            {
-                return _topic;
-            }
+            get { return _topic; }
             set
             {
-                _topic = value;
+                SetProperty(ref _topic, value);
             }
         }
+
+        private List<SearchResult> _results;
 
         public List<SearchResult> Results
         {
-            get
-            {
-                return _results;
-            }
+            get{return _results;}
             set
             {
-                _results = value;
+                SetProperty(ref _results, value);
             }
         }
 
-        SearchVM searchVM = new SearchVM();
-
+        private SearchVM(MainVM mainVM) : base(mainVM)
+        {
+        }
 
         public List<SearchResult> Search(string Topic)
         {
-            BingService bingservice = new BingService();
-            return bingservice.search(Topic);
-         }
+            IBingService bingservice = DIManager.Instance.Resolve<IBingService>();
+            return bingservice.Search(Topic);
+        }
     }
 }

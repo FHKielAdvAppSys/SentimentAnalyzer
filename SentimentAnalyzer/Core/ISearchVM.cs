@@ -1,4 +1,5 @@
-﻿using SentimentAnalyzer.Model;
+﻿using Microsoft.Practices.Prism.Commands;
+using SentimentAnalyzer.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,12 @@ using System.Threading.Tasks;
 
 namespace SentimentAnalyzer.Core
 {
-    interface ISearchVM
+    public interface ISearchVM
     {
-       List<SearchResult> Search(String Topic);
+        String Topic { get; set; }
+
+        List<SearchResult> Results { get; set; }
+
+        List<SearchResult> Search(String Topic);
     }
 }

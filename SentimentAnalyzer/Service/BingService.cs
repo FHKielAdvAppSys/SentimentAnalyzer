@@ -18,11 +18,14 @@ namespace SentimentAnalyzer.Service
         /// </summary>
         /// <param name="topic"></param>
         /// <returns></returns>
-        public List<SearchResult> search(string topic)
+        public List<SearchResult> Search(string topic)
         {
-            List<SearchResult> mockListResult = new List<SearchResult>();
-            SearchResult mockResult = new SearchResult();
-            mockListResult.Add(mockResult);
+            List<SearchResult> mockListResult = new List<SearchResult>()
+            {
+                new SearchResult { ID = 1, Title = "title1", Description = "scription1", Url = "www.url1.com" },
+                new SearchResult { ID = 2, Title = "title2", Description = "scription2", Url = "www.url2.com" }
+                new SearchResult { ID = 3, Title = "title3", Description = "scription3", Url = "www.url3.com" }
+            };
             return mockListResult;
         }
     }

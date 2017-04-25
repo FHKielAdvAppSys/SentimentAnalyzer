@@ -1,4 +1,7 @@
 ﻿using SentimentAnalyzer.Core;
+using SentimentAnalyzer.Model;
+using SentimentAnalyzer.Service;
+using SentimentAnalyzer.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -22,7 +25,10 @@ namespace SentimentAnalyzer
         /// <param name="e"></param>
         public void Application_Startup(object sender, StartupEventArgs e)
         {
-            
+            DIManager.Instance.Register<SearchResult, SearchResult>(LifeCycle.Transient);
+            DIManager.Instance.Register<IBingService, BingService>(LifeCycle.Transient);
+            DIManager.Instance.Register<MainVM, MainVM>(LifeCycle.Singletone);
+            DIManager.Instance.Register<ISearchVM, SearchVM>(LifeCycle.Singletone);
         }
 
         /// <summary>

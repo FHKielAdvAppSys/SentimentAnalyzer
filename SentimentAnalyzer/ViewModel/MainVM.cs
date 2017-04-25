@@ -1,4 +1,5 @@
-﻿using SentimentAnalyzer.Core;
+﻿using Microsoft.Practices.Prism.Mvvm;
+using SentimentAnalyzer.Core;
 using SentimentAnalyzer.Service;
 using SentimentAnalyzer.ViewModel;
 using System;
@@ -9,29 +10,22 @@ using System.Threading.Tasks;
 
 namespace SentimentAnalyzer.ViewModel
 {
-    class MainVM
+    public class MainVM : BindableBase
     {
         private ISearchVM _searchVM = new SearchVM();
 
         public ISearchVM SearchVM
         {
-            get
-            {
-                return _searchVM;
-            }
+            get { return _searchVM; }
             set
             {
-                _searchVM = value;
+                SetProperty(ref _searchVM, value);
             }
         }
 
-        public MainVM (IBingService bingService, ISearchVM searchVM)
+        public MainVM(ISearchVM searchVM)
         {
-            // Constructor coding
-        }
-        public MainVM ()
-        {
-
+            SearchVM = searchVM;
         }
     }
 }

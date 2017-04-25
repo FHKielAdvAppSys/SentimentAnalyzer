@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Practices.Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,22 @@ using System.Threading.Tasks;
 
 namespace SentimentAnalyzer.ViewModel
 {
-    class ChildVM
+    public class ChildVM : BindableBase
     {
-        // instance of MainVM
-        MainVM mainVM = new MainVM();
+        private MainVM _mainVM;
+        public MainVM MainVM
+        {
+            get { return _mainVM; }
+            set
+            {
+                SetProperty(ref _mainVM, value);
+            }
+        }
 
         // constructor with MainVM parameter
-        public ChildVM (MainVM mVM)
+        public ChildVM(MainVM mainVM)
         {
-            mainVM = mVM;
+            MainVM = mainVM;
         }
     }
 }
