@@ -43,14 +43,11 @@ namespace SentimentAnalyzer.ViewModel
 
         SearchVM searchVM = new SearchVM();
 
+
         public List<SearchResult> Search(string Topic)
         {
-            throw new NotImplementedException();
-        }
-
-        //        public List<SearchResult> Search(string Topic)
-        //        {
-        //return 
-        //        }
+            BingService bingservice = new BingService();
+            return bingservice.search(Topic);
+         }
     }
 }
