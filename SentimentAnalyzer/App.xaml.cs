@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SentimentAnalyzer.Core;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -20,9 +21,8 @@ namespace SentimentAnalyzer
         /// <param name="sender"></param>
         /// <param name="e"></param>
         public void Application_Startup(object sender, StartupEventArgs e)
-
         {
-
+            
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace SentimentAnalyzer
         /// <param name="e"></param>
         public void Application_Exit(object sender, ExitEventArgs e)
         {
-
+            DIManager.Instance.Dispose();
         }
     }
 }
