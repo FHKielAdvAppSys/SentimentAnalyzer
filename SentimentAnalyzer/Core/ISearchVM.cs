@@ -11,10 +11,10 @@ namespace SentimentAnalyzer.Core
 {
     public interface ISearchVM
     {
+        DelegateCommand SearchCommand { get; set; }
+
         String Topic { get; set; }
 
         List<SearchResult> Results { get; set; }
-
-        List<SearchResult> Search(String Topic);
     }
 }

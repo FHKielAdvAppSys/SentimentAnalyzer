@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="btnAnalyzeSentiment" Content="Search" HorizontalAlignment="Left" Margin="229,90,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="168,46,0,0" TextWrapping="Wrap" Text="Enter a topic" VerticalAlignment="Top" Width="197" TextChanged="textBox_TextChanged"/>
-        <Grid HorizontalAlignment="Left" Height="191" Margin="0,128,0,0" VerticalAlignment="Top" Width="517"/>
-
+        <Button x:Name="btnAnalyzeSentiment" Command="{Binding Path=SearchVM.SearchCommand}" Content="Search" HorizontalAlignment="Left" Margin="229,90,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtTopic" Text="{Binding SearchVM.Topic, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="168,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <DataGrid Name="dgrSearchResult" ItemsSource="{Binding Path=SearchVM.Results}" HorizontalAlignment="Left" Height="191" Margin="0,128,0,0" VerticalAlignment="Top" Width="517"/>
     </Grid>
 </Window>

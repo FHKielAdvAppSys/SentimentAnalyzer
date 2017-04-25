@@ -80,7 +80,6 @@
     <Compile Include="Core\ISearchVM.cs" />
     <Compile Include="Model\SearchResult.cs" />
     <Compile Include="Service\BingService.cs" />
-    <Compile Include="ViewModel\ChildVM.cs" />
     <Compile Include="ViewModel\MainVM.cs" />
     <Compile Include="ViewModel\SearchVM.cs" />
     <Page Include="MainWindow.xaml">

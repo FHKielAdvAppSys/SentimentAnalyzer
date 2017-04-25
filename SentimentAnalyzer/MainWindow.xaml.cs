@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SentimentAnalyzer.Core;
+using SentimentAnalyzer.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,16 +25,8 @@ namespace SentimentAnalyzer
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            DataContext = DIManager.Instance.Resolve<MainVM>();
         }
     }
 }

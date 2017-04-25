@@ -13,21 +13,30 @@ namespace SentimentAnalyzer.Model
         public int ID
         {
             get { return _id; }
-            set { SetProperty(ref _id, value); }
+            set
+            {
+                SetProperty(ref _id, value);
+            }
         }
 
         private string _title;
         public string Title
         {
             get { return _title; }
-            set { SetProperty(ref _title, value); }
+            set
+            {
+                SetProperty(ref _title, value);
+            }
         }
 
         private string _description;
         public string Description
         {
             get { return _description; }
-            set { SetProperty(ref _description, value); }
+            set
+            {
+                SetProperty(ref _description, value);
+            }
         }
 
         private string _url;

@@ -12,8 +12,7 @@ namespace SentimentAnalyzer.ViewModel
 {
     public class MainVM : BindableBase
     {
-        private ISearchVM _searchVM = new SearchVM();
-
+        private ISearchVM _searchVM;
         public ISearchVM SearchVM
         {
             get { return _searchVM; }

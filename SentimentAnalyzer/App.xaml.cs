@@ -26,7 +26,7 @@ namespace SentimentAnalyzer
         public void Application_Startup(object sender, StartupEventArgs e)
         {
             DIManager.Instance.Register<SearchResult, SearchResult>(LifeCycle.Transient);
-            DIManager.Instance.Register<IBingService, BingService>(LifeCycle.Transient);
+            DIManager.Instance.Register<IBingService, BingService>(LifeCycle.Singletone);
             DIManager.Instance.Register<MainVM, MainVM>(LifeCycle.Singletone);
             DIManager.Instance.Register<ISearchVM, SearchVM>(LifeCycle.Singletone);
         }
