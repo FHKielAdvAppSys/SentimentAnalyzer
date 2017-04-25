@@ -393,6 +393,13 @@
               LastKnownName="ISearchVM"
               LastKnownLocation="Modeling.uml" />
           </interfaceRealization>
+          <dependency
+            Id="11fbe90a-83b6-4103-af41-2b66005afd91">
+            <classMoniker
+              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+              LastKnownName="DIManager"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
         </suppliersInternal>
         <generalsInternal>
           <generalization
@@ -582,6 +589,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="5f61f262-bfd8-4db3-8727-1570ae5f4907"
+            isDerived="false"
+            sourceEndRoleName="SearchVM"
+            targetEndRoleName="DelegateCommand"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a4784c20-0aa4-4ba5-be57-f8528ce9aebd"
+              LastKnownName="Prism::DelegateCommand"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="29bcf649-828e-4822-88c6-9c16df79bac0"
+                  name="SearchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17fe2072-cb24-41c6-96ec-a968fe5b13d6"
+                  name="DelegateCommand"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -715,30 +761,6 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="3a4eeec4-ca5e-4413-a115-7e10e1f0733b"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="215f059f-9125-48e5-bd47-9ad378ed8cf2"
-                      LastKnownName="Task"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="a4adc3d8-530e-4115-b1dc-cee0ae46bd79"
-            name="Search"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="b1d951fe-7f79-45cc-b6db-ddc18e18ca4d"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -979,6 +1001,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="26bcbdea-6241-4310-91dc-978ce16d306b">
+            <classMoniker
+              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+              LastKnownName="DIManager"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <generalsInternal>
           <generalization
             Id="8996bfed-c9c6-42ea-998f-0f93e69afa20"
@@ -1018,6 +1049,45 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="e51e0cf2-2066-4526-936f-b1edd92176d6"
+                  name="SearchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="58ac1ea3-30e0-4f55-854d-c5766b5e0232"
+            isDerived="false"
+            sourceEndRoleName="MainVM"
+            targetEndRoleName="SearchVM"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="af5e05e1-b63a-47af-9371-9786629405ef"
+              LastKnownName="SearchVM"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af45c768-75dd-4ef5-85dc-92884e14d777"
+                  name="MainVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e7b492e-693f-4fe7-abfb-fcc3427694e0"
                   name="SearchVM"
                   isLeaf="false"
                   isStatic="false"
@@ -1087,21 +1157,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="af86cb23-9480-47d5-abaa-9a70c9935a58"
-                  name="bingService"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="c26add11-afbc-473d-9d81-eadbd6cdf6bb"
-                      LastKnownName="IBingService"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f520bd3d-2217-4243-92c7-e5b2e74b66ce"
+                  Id="095267b2-52c5-4811-9112-895d686290a2"
                   name="searchVM"
                   direction="In"
                   isUnique="false">
@@ -1490,134 +1546,10 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="1fc98fba-ea43-41be-9965-fc0882dac378"
-            name="PropertyChanged"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="89c68643-8ed2-4d44-81ee-b33b7e57b451"
-                name="event"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9a84e6f3-2b71-4b8a-b92f-d99366e52782">
-                    <propertyInstance
-                      Id="b49c4d34-537b-4102-b36b-00d6a21ef55c"
-                      name="Add"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9367fdfa-91d0-4630-9920-6c5c3f29e045">
-                    <propertyInstance
-                      Id="d55475bb-6954-485e-98d2-68c2479a2bfa"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2858dd75-b360-4f8b-b964-332a471bf801">
-                    <propertyInstance
-                      Id="65801ca0-4270-4169-907e-3b7b8d399b93"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="90aa3897-8435-4191-9d5f-0ba226815174">
-                    <propertyInstance
-                      Id="f6e4e0d0-ce5f-447f-ae14-f71653c3a603"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cb6b5247-fa57-4192-9381-41b4b69d7faf">
-                    <propertyInstance
-                      Id="7ce41573-901d-4b00-9466-d1e4d1a755f9"
-                      name="Remove"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="62d1429c-3e73-43c1-a8e9-8e42a37f5f04"
-                LastKnownName="PropertyChangedEventHandler"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="fa84737a-4881-403f-a445-b1057e11df8c"
-            name="PropertyChanging"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="0537c72c-ec25-4770-b37a-1df878b4d96e"
-                name="event"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dcfa1863-992e-43b6-95a1-a3bfdb27c745">
-                    <propertyInstance
-                      Id="d7064f43-130b-473e-9224-3c800146c919"
-                      name="Add"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="902f3b63-ed1f-4d1c-9f68-5345ec3f3b40">
-                    <propertyInstance
-                      Id="8cc5e48e-f6a6-4479-9869-add5c3a0b5b3"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9daf986f-0e45-4336-a891-395f9151a1eb">
-                    <propertyInstance
-                      Id="48b406c5-3bf9-4e50-be51-cb9d8d47bbf1"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5b2e74c7-4e55-4731-9b1c-a35fb75e01cf">
-                    <propertyInstance
-                      Id="9c534d6d-b10a-4c8c-a21b-9d563a72f637"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c9369c1d-36f1-4f7c-85fd-65554a30a7e2">
-                    <propertyInstance
-                      Id="713fc265-cac2-4dde-96ce-63f084d14d7e"
-                      name="Remove"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="56eb54ed-663a-4b25-b57f-0fcc9bd9eb6a"
-                LastKnownName="PropertyChangingEventHandler"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="6549572a-36af-4549-a523-4b07cbb88a38"
-            name="Set&lt;T&gt;"
+            name="SetProperty&lt;T&gt;"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1626,42 +1558,43 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="4d54cf72-0409-4472-85c5-4923cd417aad"
-                  name="ref T prop"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="81299ab9-0f3d-4cf5-b9a6-820194164433"
-                  name="T value"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="b867cb86-9829-451b-af6c-54e28cacf3f5"
-                  name="[CallerMemberName]string propName"
-                  direction="In"
-                  isUnique="false">
-                  <defaultValue>
-                    <literalString
-                      Id="b360a94a-8016-4764-811a-a81dbd6c2fac"
-                      name="DefaultValue"
-                      value="null" />
-                  </defaultValue>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="f389f16c-85cc-41b5-9c49-75fefd047412"
-                  direction="Return">
+                  direction="Return"
+                  isUnique="false">
                   <type_NamedElement>
                     <primitiveTypeMoniker
                       Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
                       LastKnownName="Boolean"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bfa540a2-1ea8-4096-8a0c-a2ae9205c008"
+                  name="ref T storage"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82f00835-7ab1-424b-b3d5-8d5e8018c714"
+                  name="T value"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8339882-0f8e-42ac-8b07-6c95bfee46b5"
+                  name="[CallerMemberName] string propertyName"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="587219bb-2c18-480b-885e-a580f824525e"
+                      name="DefaultValue"
+                      value="null" />
+                  </defaultValue>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1686,10 +1619,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="93017413-579f-4152-8292-3f408ae04278">
+            <classMoniker
+              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+              LastKnownName="DIManager"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="34e9f0be-053a-46d9-a517-10b63e4f9416"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="MainVM"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cd03303e-2260-452c-8608-3053ce87b946"
+              LastKnownName="MainVM"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2263543a-99a9-458d-8b2f-c64a748debfa"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="82f9acc7-0745-4975-bd2f-558ed68994d0"
+                  name="MainVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="3dbc5c10-2f77-48e1-816a-b0c496c7a9b4"
-            name="txtInput"
+            name="txtTopic"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1727,7 +1710,7 @@
           </property>
           <property
             Id="8175fdac-8a61-48c6-8e3f-ba172fb7450c"
-            name="grdSerachResult"
+            name="dgrSerachResult"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1768,7 +1751,155 @@
         name="DIManager"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f0794802-0de0-4429-8f89-e5349a50b9ad">
+            <enumerationMoniker
+              Id="705c130a-1774-4a98-9db2-a5bb4f8f07e7"
+              LastKnownName="LifeCycle"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="0389357e-e4a4-44a0-9431-f9da6228f3d9">
+            <classMoniker
+              Id="a0d9832e-da3c-40d3-9bce-99d7f6c35da8"
+              LastKnownName="CastleWindsor::Component"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="1a73609e-2232-4385-a955-a16a2ed3f0cf"
+            isDerived="false"
+            sourceEndRoleName="DIManager"
+            targetEndRoleName="CastleWindsor::WindsorContainer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="331f8730-1eea-47b3-bc40-a9ee6eeccdde"
+              LastKnownName="CastleWindsor::WindsorContainer"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2bb1c03-f516-4ea6-8c7a-3c5bf4472250"
+                  name="DIManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18209fc3-0680-412a-9dcc-79f149537293"
+                  name="CastleWindsor::WindsorContainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dffdebac-55a1-49e0-b87d-07183d635d5f"
+            name="_container"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e370f03e-8a70-4264-9a72-be5c6f5ac562"
+                LastKnownName="WindsorContainer"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1c17e6ef-4dfd-4c1b-9201-10dad1817b97"
+            name="Instance"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+                LastKnownName="DIManager"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0f3979a5-3396-46c7-9056-8c341ff46835"
+            name="DIManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e1e8e94-32d5-4962-8981-cbe9f51afb69"
+                name="create"
+                profile="StandardProfileL2" />
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="bab6ab7c-faa0-458a-a81c-10bce4fb3179"
+            name="Register&lt;TContract, TService&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="faf997d5-639b-4786-b1ef-e7848856615b"
+                  name="LifeCycle lifecycle"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="35123ae6-02e1-4f9b-a346-7f69c0879c25"
+            name="public TService Resolve&lt;TService&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="efa2b5eb-af65-4207-9e5b-bd201903f345"
+            name="public void Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -1777,6 +1908,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f0e41dfe-de1e-4ef1-94d6-0a4794f3da74">
+            <classMoniker
+              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+              LastKnownName="DIManager"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="8fc301ff-6aea-4651-9ec1-23319fc9add7"
@@ -2042,6 +2182,393 @@
           </operation>
         </ownedOperations>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4784c20-0aa4-4ba5-be57-f8528ce9aebd"
+        name="Prism::DelegateCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5eb86570-31c0-4b03-aa62-ae66ba6a702c"
+            name="CanExecuteChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42d13d7a-f9e5-4322-a725-810eab088ca3"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de1f5da5-b712-401c-a441-d2275915e61a">
+                    <propertyInstance
+                      Id="787357a0-d8e2-4855-8886-d0230da666f7"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5422b3c1-ce0f-40bc-b93f-614826839c3f">
+                    <propertyInstance
+                      Id="47bbb954-db40-4368-87e1-6deb8ba30f8a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce694e15-3ad6-4c2a-9ce2-ca9d82fc39db">
+                    <propertyInstance
+                      Id="a3d6395d-c8a3-48e1-bce4-cf5319c294eb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49f3a99a-a0c6-4a5e-ad7f-437f78b62700">
+                    <propertyInstance
+                      Id="d5892d29-9e92-416a-83f9-00c751b5afd3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13befd79-41be-4fec-a3a5-0e50ff5ec809">
+                    <propertyInstance
+                      Id="e44740ad-13ca-4f00-837c-28bfaa6ad91c"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3528d783-9c31-4301-83e8-bb184e4c4207"
+                LastKnownName="EventHandler"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dc2efd00-1b78-4e76-86ad-442d0d8386ce"
+            name="RaiseCanExecuteChanged"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="50df2c5c-df61-46b3-9624-db295c3de06a"
+            name="CanExecute"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a5f58c65-529d-4ba9-88d1-b2d00ea946e5"
+                  name="object parameter"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f607ec3-93f3-4bda-b7af-fb5498421187"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b3ae0510-6685-436e-a725-fdadf4458c15"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0fde6c02-cfe7-466d-93c1-69cbf7d71df6"
+                  name="object parameter"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3825a8f3-7cc5-4a34-9bd1-4e0cb2a23c4a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="215f059f-9125-48e5-bd47-9ad378ed8cf2"
+                      LastKnownName="Task"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="48eea8d4-e242-4668-820d-3d4f84cd1b06"
+        name="void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="331f8730-1eea-47b3-bc40-a9ee6eeccdde"
+        name="CastleWindsor::WindsorContainer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="f527c9ec-a276-4691-b422-d02f9e4a35a4"
+            name="Register"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="86923017-dcd7-4827-b85c-c12e1039342f"
+                  name="params IRegistration[] registrations"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a8b4e93-2f24-4024-9f8c-fcdcc9b7844b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="208d9267-b4cd-4181-ba30-e249ef4feee3"
+                      LastKnownName="IWindsorContainer"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a48c4855-76a1-4379-b044-87be18ae8615"
+            name="Resolve&lt;T&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58d632eb-afb4-48a5-814d-c54bfb3947a6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="add616c0-e9bd-4d2e-b618-cf0d0415b74a"
+                      LastKnownName="T"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e370f03e-8a70-4264-9a72-be5c6f5ac562"
+        name="WindsorContainer" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="705c130a-1774-4a98-9db2-a5bb4f8f07e7"
+        name="LifeCycle"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="64270575-4041-4146-ae71-802e4f9e8723"
+            name="Transient" />
+          <enumerationLiteral
+            Id="9d293220-b53d-463b-aa12-0f4e9c54bf91"
+            name="Singelton" />
+          <enumerationLiteral
+            Id="6d4c352f-1172-4dac-8464-dcee925a3e73"
+            name="PerThread" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="208d9267-b4cd-4181-ba30-e249ef4feee3"
+        name="IWindsorContainer" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="add616c0-e9bd-4d2e-b618-cf0d0415b74a"
+        name="T" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a0d9832e-da3c-40d3-9bce-99d7f6c35da8"
+        name="CastleWindsor::Component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="689291c1-3d47-46ce-88b6-356573f831ac"
+            name="For&lt;TService&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6defdc5b-1093-4582-9458-f908644ee6e9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="76cfc48a-7b6c-4a50-a8fe-d80e34c102c1"
+                      LastKnownName="ComponentRegistration&lt;TService&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3938221c-3645-4d8d-b0a1-ad59249ff542"
+            name="ImplementedBy&lt;TImpl&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c45a34a6-c0a3-43e6-ad79-0a6cb475d96c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="76cfc48a-7b6c-4a50-a8fe-d80e34c102c1"
+                      LastKnownName="ComponentRegistration&lt;TService&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="91ea9e71-e77e-4277-987a-b125aa5a4aaf"
+            name="LifestyleSingleton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="78ef2e2a-9ac3-4762-9338-0ad7190c7e69"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="76cfc48a-7b6c-4a50-a8fe-d80e34c102c1"
+                      LastKnownName="ComponentRegistration&lt;TService&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6ff92cef-9e1f-45c5-8063-f9184bb7748e"
+            name="LifestyleTransient"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30c778d0-ecc9-4ce9-9e74-e101293c1c3d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="76cfc48a-7b6c-4a50-a8fe-d80e34c102c1"
+                      LastKnownName="ComponentRegistration&lt;TService&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d77ea844-6ffd-4fce-b085-fa716947d518"
+            name="LifestylePerThread"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7cd73415-4af8-4e5a-9716-d6c13fc591a0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="76cfc48a-7b6c-4a50-a8fe-d80e34c102c1"
+                      LastKnownName="ComponentRegistration&lt;TService&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="76cfc48a-7b6c-4a50-a8fe-d80e34c102c1"
+        name="ComponentRegistration&lt;TService&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

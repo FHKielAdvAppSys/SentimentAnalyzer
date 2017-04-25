@@ -38,7 +38,7 @@ namespace SentimentAnalyzer
         /// <param name="e"></param>
         public void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
-
+            ///ToDo
         }
 
         /// <summary>

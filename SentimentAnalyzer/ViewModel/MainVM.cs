@@ -1,4 +1,4 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
+﻿    using Microsoft.Practices.Prism.Mvvm;
 using SentimentAnalyzer.Core;
 using SentimentAnalyzer.Service;
 using SentimentAnalyzer.ViewModel;
