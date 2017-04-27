@@ -83,7 +83,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Service\BingSearchContainer.cs" />
     <Compile Include="Core\DIManager.cs" />
     <Compile Include="Core\IBingService.cs" />
     <Compile Include="Core\ISearchVM.cs" />
