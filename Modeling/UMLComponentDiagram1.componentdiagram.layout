@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="f36ac33b-0ecd-41b9-bcd3-5987c6545cdd" />
+  <nestedChildShapes>
+    <componentShape Id="982e7fd4-817c-45ec-ad8e-44af5ee44d4c" absoluteBounds="1.875, 2.125, 2.0083332220713288, 2.1625064855813969" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="7dc125ea-7884-4fb9-8c60-7b3d2f47b60a" LastKnownName="UI" />
+      <nestedChildShapes>
+        <componentUseShape Id="d0590119-b036-4daf-a886-c91355512b7b" absoluteBounds="2.1333333333333329, 2.75, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+          <partMoniker Id="08c7a040-e493-4b5c-a382-2702e67d572b" LastKnownName="MainWindow" />
+        </componentUseShape>
+      </nestedChildShapes>
+    </componentShape>
+    <componentShape Id="5c240f60-a6b4-496f-b444-22e0d3fc19a8" absoluteBounds="5.125, 2.125, 3.1333333333333329, 1.7999999999999998" customColor="161, 199, 231" whiteBoxBoundsHeight="2.2017599445581428" whiteBoxBoundsWidth="3.9715704456965124" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="3.9715704456965124" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="0e6fbc36-2f50-4984-98e9-15271237293d" LastKnownName="MainVM" />
+      <nestedChildShapes>
+        <componentUseShape Id="11d7bba8-2893-4b99-b367-27feb3fef17f" absoluteBounds="5.875, 2.75, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+          <partMoniker Id="e7e94321-b630-4426-9aaa-d6595d9a1b09" LastKnownName="SearchVM" />
+        </componentUseShape>
+      </nestedChildShapes>
+    </componentShape>
+    <componentShape Id="96a0b718-7854-47d0-9225-2ebc6a3d0ec2" absoluteBounds="5.125, 4.25, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="05ed4359-80e2-40cc-ab23-fdb392601c10" LastKnownName="App" />
+    </componentShape>
+    <componentShape Id="7a27fef8-1018-4a34-89db-de8c14f2bf58" absoluteBounds="6.75, 4.25, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="cc5fa595-5349-4f8c-afd8-aecad1c46701" LastKnownName="BingService" />
+    </componentShape>
+    <commentShape Id="33566c69-b9e0-490a-aaba-92761cddbc22" absoluteBounds="2.25, 1.625, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="11d548a7-da99-4495-a4e2-f8bbe96e264a" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="84ba4952-2126-4a94-995f-e73f86705439" absoluteBounds="6, 1.625, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="890945a9-1bf8-4085-b0ec-7cf1a94073e3" />
+      <relativeChildShapes />
+    </commentShape>
+  </nestedChildShapes>
+</componentDiagram>
