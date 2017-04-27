@@ -9,13 +9,18 @@ namespace SentimentAnalyzer.Model
 {
     public class SearchResult : BindableBase
     {
-        private int _id;
-        public int ID
+        private string _id;
+
+        public string ID
         {
-            get { return _id; }
+            get
+            {
+                return _id;
+            }
+
             set
             {
-                SetProperty(ref _id, value);
+                _id = value;
             }
         }
 
@@ -48,5 +53,7 @@ namespace SentimentAnalyzer.Model
                 SetProperty(ref _url, value);
             }
         }
+
+       
     }
 }
