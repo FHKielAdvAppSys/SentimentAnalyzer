@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f36ac33b-0ecd-41b9-bcd3-5987c6545cdd" name="UMLComponentDiagram1" linkedPackageId="a139c8cb-496e-43c9-a759-696d2c9492f8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="11d548a7-da99-4495-a4e2-f8bbe96e264a">
+      <elementDefinition Id="393f1f4f-2bbe-4c97-90e8-85d15b5f5ffa" />
+      <body>Presentation
+</body>
+    </comment>
+    <comment Id="890945a9-1bf8-4085-b0ec-7cf1a94073e3">
+      <elementDefinition Id="886063bd-1d93-4231-97a6-3a1388a6d021" />
+      <body>Business
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="6e55090a-c906-4f72-b906-096e36b43b28">
+      <profileInstance Id="11ad42e1-4042-40b8-81ad-f62cf19cb9ba" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5701c26b-b022-479c-8325-21beb8c2ede6">
+      <profileInstance Id="7f8a5363-39d2-4f71-acb0-d82721008f10" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9448177d-b174-43e1-adaf-9c05f9ffa56c">
+      <profileInstance Id="8eaaefb4-3a71-480a-8b14-55a3ff9ca57a" name="CSharpProfile">
+        <elementDefinition Id="e5965bf6-7f6a-4289-84ac-f0e2130ad1c6" />
+      </profileInstance>
+      <elementDefinition Id="68211987-bb30-4cb8-b937-bb0f80ac8500" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4090193f-a647-4446-8e4a-0c93bb3d04b9">
+      <profileInstance Id="59f48e7c-bece-4796-a885-1867f427b0b9" name="TextTemplateBindings">
+        <elementDefinition Id="59df3553-a345-4a5d-a1b5-d4fb2cb6902c" />
+      </profileInstance>
+      <elementDefinition Id="cdfa73a0-9275-4605-9870-cf5f0da730c0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="573ef258-a09b-46d6-ae60-fdeb2e4132ed">
+      <profileInstance Id="ff6ef03e-73f0-4027-a116-3ae655180795" name="VisualStudioArchitectureToolsXmiImport">
+        <elementDefinition Id="cc83b2ba-6ba7-423c-aa15-d69ff5464b79" />
+      </profileInstance>
+      <elementDefinition Id="2130c502-93df-4ff5-bfac-11fab11b6a45" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="7dc125ea-7884-4fb9-8c60-7b3d2f47b60a" name="UI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4aa366e4-93e8-4eeb-ac7e-121e0615db5b" />
+        <ownedAttributesInternal>
+          <part Id="08c7a040-e493-4b5c-a382-2702e67d572b" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="ec4d14c2-0699-4ddf-a6b9-129967d551b2" />
+            <type_NamedElement>
+              <componentMoniker Id="c69fd813-5ce7-4e79-a168-f4f763c7ef98" LastKnownName="Component5" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0e6fbc36-2f50-4984-98e9-15271237293d" name="MainVM" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="11f7565e-f2f1-4d01-a032-85060eba7acb" name="TextTemplateBindings" profile="TextTemplateBindings">
+            <elementDefinition Id="b5409377-e748-4216-a021-f6ea2df6f715" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="46d7280a-e13e-4dfc-ac40-c1a4ad0a6486">
+                <propertyInstance Id="384322ce-1029-48b1-a607-ed164380ed0d" name="Alias">
+                  <elementDefinition Id="49bb1311-bab0-484e-912a-cfdfb06d325d" />
+                </propertyInstance>
+                <elementDefinition Id="8f071719-69ab-4ed8-9719-a341bd2b82be" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="5e989cde-0bfc-4df9-b546-7b6efefb1f79">
+                <propertyInstance Id="b389046c-6e90-421f-b2a7-0c8058888ca1" name="TemplateFilePath">
+                  <elementDefinition Id="b3a43783-e0a3-4988-8369-623fb1dd8c5f" />
+                </propertyInstance>
+                <elementDefinition Id="a9bd3a34-8144-4215-97b8-c23fe97b4336" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8e99c766-9dc8-4fe2-9b50-77dc4671aa5e">
+                <propertyInstance Id="41a345ec-15d6-45d2-9cb4-2f59a798ae60" name="ProjectPath">
+                  <elementDefinition Id="448e5183-4fb8-49f8-ac69-78ddd21a6703" />
+                </propertyInstance>
+                <elementDefinition Id="da701c0b-04f3-4798-a65f-6bb78e055116" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="200ac6e7-fc1a-4b75-ad16-e84dfa2d7f18">
+                <propertyInstance Id="3babb931-7470-417e-8dc8-c406a5ac911b" name="TargetDirectory">
+                  <elementDefinition Id="a9745d38-5ed0-4d08-93a0-6c9d87714e01" />
+                </propertyInstance>
+                <elementDefinition Id="ac54e272-bc9d-4b67-a323-cab334cb6acb" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b1b623fd-917a-410a-9673-2916bd26ed27">
+                <propertyInstance Id="0f551ec0-1551-4368-9960-51775a502a7d" name="TargetName">
+                  <elementDefinition Id="23cf4a64-bbe9-4fb1-aa28-fe3c6b6c85c5" />
+                </propertyInstance>
+                <elementDefinition Id="cc8eefe9-0f8a-4260-9977-d15d8fb685df" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6775e9bd-9930-43ad-b62f-d0b59b51ea3e">
+                <propertyInstance Id="d0ce5d4c-a8e7-409d-acf1-cef7179cb84a" name="Overwrite">
+                  <elementDefinition Id="65d7ec91-fbf4-4fa0-8099-edace04b224d" />
+                </propertyInstance>
+                <elementDefinition Id="c686de28-f279-4508-8357-b5e804aa5835" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="39817caf-395b-4ed5-afe9-f5041da20b3c">
+                <propertyInstance Id="75be96ec-89a6-4e92-b90a-5e55f5b0c180" name="Parameters">
+                  <elementDefinition Id="5b2ec736-70e6-4670-97d7-ed8e7bae6ac5" />
+                </propertyInstance>
+                <elementDefinition Id="fbd329b9-2609-4d87-bf6b-89a6b7c87b28" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="cbc769a5-228e-4a3a-acdb-b94fde3110cb" />
+        <ownedAttributesInternal>
+          <part Id="e7e94321-b630-4426-9aaa-d6595d9a1b09" name="SearchVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="67ec5cbf-af86-4503-9c20-4ad338c48c06" />
+            <type_NamedElement>
+              <componentMoniker Id="38f5e72d-8746-433b-b5a8-7745740ef328" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="38f5e72d-8746-433b-b5a8-7745740ef328" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="600de495-f432-49f3-9204-17b14dde098e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c69fd813-5ce7-4e79-a168-f4f763c7ef98" name="Component5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="014af5a4-dba6-42c1-aa8c-02cd04cd592d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="05ed4359-80e2-40cc-ab23-fdb392601c10" name="App" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d0afbf98-010b-4da8-a44e-f39280c4ecba" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="cc5fa595-5349-4f8c-afd8-aecad1c46701" name="BingService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a6992697-7693-4c18-a203-4828df3cf82b" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="a139c8cb-496e-43c9-a759-696d2c9492f8" name="Modeling">
+    <elementDefinition Id="fd423be3-219d-428c-b855-245467d7244d" />
+  </package>
+</componentModel>

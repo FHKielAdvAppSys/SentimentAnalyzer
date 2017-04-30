@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SentimentAnalyzer.Core;
+using SentimentAnalyzer.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,8 @@ namespace SentimentAnalyzer
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = DIManager.Instance.Resolve<MainVM>();
         }
     }
 }

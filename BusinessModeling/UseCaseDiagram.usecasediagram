@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5fecd5ba-51bf-4404-8470-ad94c3f287ec" name="UseCaseDiagram" linkedPackageId="0531ef6c-f956-47bf-a02a-ed2104a18ee3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="877cecbc-fa40-45c9-9115-9574b7caae47">
+      <profileInstance Id="94e10a3f-53c6-4d84-932b-94ec07dc1059" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cafba933-a962-4cca-b30c-17e7f3f6ab88">
+      <profileInstance Id="47463a4d-6687-4c21-a7f2-00c3ce1f9f86" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="346438e5-ec25-4ed3-8e9d-791a9d122b4f" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04348f29-f3ad-453c-9979-bf943a213efe" />
+        <targetEnds>
+          <association Id="029f458f-9835-49ca-b099-d942f4bf2014" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aeffb32e-6f41-4ca4-9ba7-a828b0db30c3" LastKnownName="Analyze Sentiment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f16ec40b-2817-4be3-8d9a-8f5a1490802b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="90a38133-4284-4c40-8d6f-7b7abe27d792" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3aff0fc3-164b-4122-96b8-15121f352107" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ea1a94b1-498c-4653-b2f4-6eec9ed33429" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1ed1b629-3bc6-431a-b055-48585a58e621" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="595a7f27-5ca8-41cf-9d53-5101f277c80d" name="Bing" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4fd1f1a-7cb9-4ae0-b35e-be9a05f7de2c" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" name="Sentiment Analyzer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="59a200d2-54d4-47af-9633-fded20f57072" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aeffb32e-6f41-4ca4-9ba7-a828b0db30c3" name="Analyze Sentiment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb744918-7283-4b36-865d-ab971b198e04" />
+        <additions>
+          <include Id="4a745f8a-2aa9-4c74-9ee3-c0b67194e49b">
+            <useCaseMoniker Id="39020c32-62bc-4444-81a4-4a28fea76c54" LastKnownName="Analyze results" />
+            <elementDefinition Id="3044a46a-f24b-41f2-912b-017700cd5331" />
+          </include>
+          <include Id="abf58caa-6247-4745-ad8d-c704f8b47be5">
+            <useCaseMoniker Id="bd6a2d55-f3cb-4d52-9686-0da51a880cdf" LastKnownName="Search topic" />
+            <elementDefinition Id="fecce8a2-4c2f-43cd-85af-01f21677d349" />
+          </include>
+          <include Id="7cdc5918-22bd-4a8d-a1a0-95feb404216e">
+            <useCaseMoniker Id="8e297ecb-5963-469b-8918-a9c53db1cded" LastKnownName="Evaluate results" />
+            <elementDefinition Id="d494359a-2d5d-4a1e-9d47-cad1c5746347" />
+          </include>
+          <include Id="3acaecd6-a4b9-4c77-841e-8a77a0e4c989">
+            <useCaseMoniker Id="08b95e80-6d66-45eb-b102-f3807e7a3c21" LastKnownName="Refine results" />
+            <elementDefinition Id="98f3f2f2-6bdb-4c8d-a45e-d3df3cfe2808" />
+          </include>
+          <include Id="a79db7c7-13c7-4f84-b281-2c4b1079f421">
+            <useCaseMoniker Id="39ee0945-88a5-4fc9-8ea1-92e84f629f8b" LastKnownName="Display graphical result" />
+            <elementDefinition Id="6b093891-3add-4f54-bb04-14287d96109f" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" LastKnownName="Sentiment Analyzer" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bd6a2d55-f3cb-4d52-9686-0da51a880cdf" name="Search topic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fb6f56d-7950-4228-9f9a-ece6f5ab17f4" />
+        <targetEnds>
+          <association Id="97df28fe-d76e-40b8-a71d-e1f913fc3280" isDerived="false" sourceEndRoleName="Search" targetEndRoleName="Bing" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="595a7f27-5ca8-41cf-9d53-5101f277c80d" LastKnownName="Bing" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95574866-e0cc-45c3-bc18-5dbea76a3860" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2402650e-bdf5-4638-8825-e2a5515d956a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcd56ab0-d54d-4c53-9526-769903023052" name="Bing" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da55e147-c44f-48fa-b305-9e6fa8b3268c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8973e3f-b179-4118-89e8-3e4a1d4e4852" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" LastKnownName="Sentiment Analyzer" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="39020c32-62bc-4444-81a4-4a28fea76c54" name="Analyze results" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce6fcf11-b99a-4eb8-a43f-d5e51543433b" />
+        <subjects>
+          <subsystemMoniker Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" LastKnownName="Sentiment Analyzer" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8e297ecb-5963-469b-8918-a9c53db1cded" name="Evaluate results" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0e9daeb-38b0-4bcc-b5f3-d3309bce96cb" />
+        <subjects>
+          <subsystemMoniker Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" LastKnownName="Sentiment Analyzer" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="39ee0945-88a5-4fc9-8ea1-92e84f629f8b" name="Display graphical result" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7901000f-84fb-48f6-99b6-9b48caede13f" />
+        <subjects>
+          <subsystemMoniker Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" LastKnownName="Sentiment Analyzer" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="08b95e80-6d66-45eb-b102-f3807e7a3c21" name="Refine results" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44e1723f-9bda-42f2-afb9-88a9526a7ba6" />
+        <subjects>
+          <subsystemMoniker Id="2d818e84-61b2-40e9-80a0-7b67d6d86f0e" LastKnownName="Sentiment Analyzer" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0531ef6c-f956-47bf-a02a-ed2104a18ee3" name="BusinessModeling">
+    <elementDefinition Id="b8b97999-0957-41d7-bab8-1de6779c0cc0" />
+  </package>
+</useCaseModelRoot>

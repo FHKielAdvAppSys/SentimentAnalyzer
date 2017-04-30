@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{35747cda-2752-441a-bdcc-0f10151ab9e6}</ProjectGuid>
+    <ProjectGuid>{4b4a7795-24f6-4f70-b3d4-7744e4f9d2bf}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>Modeling</Name>
-    <RootNamespace>Modeling</RootNamespace>
+    <Name>BusinessModeling</Name>
+    <RootNamespace>BusinessModeling</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -37,7 +37,7 @@
       <DependentUpon>UseCaseDiagram.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="ModelDefinition\Modeling.uml">
+    <Content Include="ModelDefinition\BusinessModeling.uml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

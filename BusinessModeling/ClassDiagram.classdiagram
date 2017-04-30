@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e5c9dd32-cc81-419e-aa97-fb5e2b493297" name="ClassDiagram" linkedPackageId="c5636bb7-1a5c-4353-b9d5-c185230a1ab9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="111fe4a6-a54e-44e7-9573-9d197843fee2">
+      <profileInstance Id="5e5e0893-c62b-4e56-90df-43ee53b421c6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4a420d30-e343-4aaf-839b-5253929ffbf3">
+      <profileInstance Id="67c7067c-6592-40ad-94b4-0aec6b99688f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dab597ac-39d2-44d8-8e67-f2e049fa4116" name="search" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2255f476-140d-4086-9f89-4f11d770babc" />
+        <targetEnds>
+          <association Id="ac35269e-b04b-46c5-af2e-6a242d8e5594" isDerived="false" sourceEndRoleName="serachVM" targetEndRoleName="searchResult" isLeaf="false" isAbstract="false">
+            <classMoniker Id="287c9e05-64fb-43d9-a234-27b11b18ebf3" LastKnownName="searchResult" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ccb14f19-5465-46fb-8c7e-86d0fbd691aa" name="serachVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b147e7a-6440-487f-b66b-89ca5801ef83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c5d3c3c-346b-4549-bd55-c66a452b8b0a" name="searchResult" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="a49d3450-5a25-4700-99ce-33276a5f26f6" name="Lower" value="0">
+                      <elementDefinition Id="b2da29b9-de8e-4450-8c14-07774439ee5d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2b106acc-d95b-4d63-8c4b-a55e6954db90" name="Upper" value="*">
+                      <elementDefinition Id="c9e3aa61-aa6a-4354-9d03-bd92c878c0c0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="6b5a092e-d5a7-4042-82d5-94b108810971" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c90f8d58-7c67-4243-a2b0-d05709355e75" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dd3da373-2976-4f12-bddb-d98d4b2e8c43" name="sentimentAnalyzer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bf87bdcf-d4e1-4fb8-abfd-dbdf71fb7271" />
+        <targetEnds>
+          <association Id="2d200d83-0c5e-43cb-9b6d-da23712cefd5" isDerived="false" sourceEndRoleName="sentimentAnalyzer" targetEndRoleName="search" isLeaf="false" isAbstract="false">
+            <classMoniker Id="dab597ac-39d2-44d8-8e67-f2e049fa4116" LastKnownName="search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b43635b-0916-4b7c-b63b-dbb3bf337d64" name="sentimentAnalyzer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8089f4e8-675b-449f-83c0-88ca6ccd429c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60133407-df36-40d9-b5c8-507d3e423ea6" name="search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b1d7f02-4968-4149-b577-aa86003ed014" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e2ae781-abb6-47bd-a774-a5546cb04b40" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="287c9e05-64fb-43d9-a234-27b11b18ebf3" name="searchResult" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="23fe7a10-f0bd-46b9-8052-673cb12fbbe3" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c5636bb7-1a5c-4353-b9d5-c185230a1ab9" name="BusinessModeling">
+    <elementDefinition Id="b8b97999-0957-41d7-bab8-1de6779c0cc0" />
+  </package>
+</logicalClassDesignerModel>
