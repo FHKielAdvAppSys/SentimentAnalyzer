@@ -35,14 +35,8 @@ namespace SentimentAnalyzer.Model
         }
 
         private List<SearchResult> _searchResults;
-        public List<SearchResult> SearchResults
-        {
-            get { return _searchResults; }
-            set
-            {
-                SetProperty(ref _searchResults, value);
-            }
-        }
+        public virtual List<SearchResult> SearchResults
+        { get; set; }
 
         private DateTime _date;
 
