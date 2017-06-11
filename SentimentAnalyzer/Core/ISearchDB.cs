@@ -7,11 +7,11 @@ using SentimentAnalyzer.Model;
 
 namespace SentimentAnalyzer.Core
 {
-    public interface ISearchResultDB
+    public interface ISearchDB
     {
-        List<SearchResult> Create(List<SearchResult> searchResults);
-        bool Delete(List<SearchResult> searchResults);
-        List<SearchResult> Retrieve();
-        bool Update(List<SearchResult> searchResults);
+        Search Create(Search search);
+        bool Delete(Search search);
+        Search Retrieve();
+        bool Update(Search search);
     }
 }

@@ -95,7 +95,10 @@
     <Compile Include="Core\DIManager.cs" />
     <Compile Include="Core\IBingService.cs" />
     <Compile Include="Core\ISearchDB.cs" />
+    <Compile Include="Core\ISearchResultDB.cs" />
     <Compile Include="Core\ISearchVM.cs" />
+    <Compile Include="DB\SearchDB.cs" />
+    <Compile Include="DB\SearchResultDB.cs" />
     <Compile Include="Model\Search.cs" />
     <Compile Include="Model\SearchResult.cs" />
     <Compile Include="Service\BingService.cs" />
@@ -142,9 +145,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DB\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
