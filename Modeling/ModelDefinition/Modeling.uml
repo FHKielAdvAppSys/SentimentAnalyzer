@@ -1078,7 +1078,102 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1af956bd-221d-4fe6-9494-ea2c8809c997"
+            name="bingID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="baf2ded3-e9b3-48f8-a3f8-128103762e94"
+            name="Search"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9179656f-d4e8-4680-871e-e789245d59da"
+                name="TextTemplateBindings"
+                profile="TextTemplateBindings">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d9fda19-a97e-4e85-befa-f8a22fc94676">
+                    <propertyInstance
+                      Id="594dfb8e-4cb8-422a-beff-72f79335b350"
+                      name="Alias" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae99e0f2-64dd-438c-8d3e-efc86405c914">
+                    <propertyInstance
+                      Id="f8085d97-cc6f-419d-8056-6e1f5dbbff10"
+                      name="TemplateFilePath" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1845032f-b7cf-46b5-8831-e3a3b34a0b0f">
+                    <propertyInstance
+                      Id="ae3edda3-373d-4b4e-813e-7663d6a798ea"
+                      name="ProjectPath" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b284720-771e-4023-bb41-08c0c22ad632">
+                    <propertyInstance
+                      Id="cd42fab0-e354-427f-852e-5f3c50bc87f5"
+                      name="TargetDirectory" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="984de358-a52f-4dea-9bb0-b8df25755ec2">
+                    <propertyInstance
+                      Id="19f36b08-7431-4497-b563-581be76f662d"
+                      name="TargetName" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03440831-db67-4cf8-8c7f-b6f707f8cfa0">
+                    <propertyInstance
+                      Id="2ee9bb0c-f79a-41fd-8355-647729bcffcc"
+                      name="Overwrite" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e6a50a4-0129-457c-b390-43fb85afc483">
+                    <propertyInstance
+                      Id="60dbc09b-562b-4929-9247-0f50336812a8"
+                      name="Parameters" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7"
+                LastKnownName="Search"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -2872,7 +2967,7 @@
     <packageHasNamedElement>
       <class
         Id="8537e2b2-1a62-4935-995b-21fb66fdea53"
-        name="SearchDB : ISearchDB"
+        name="SearchResultDB : ISearchResultDB"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2881,7 +2976,7 @@
             Id="ac76e7fe-c699-40b8-9e78-c1d00a8ed826">
             <interfaceMoniker
               Id="38c52ce4-ef5f-442f-bee5-504a1f2af61c"
-              LastKnownName="ISearchDB"
+              LastKnownName="ISearchResultDB"
               LastKnownLocation="Modeling.uml" />
           </interfaceRealization>
           <dependency
@@ -3088,7 +3183,7 @@
     <packageHasNamedElement>
       <Interface
         Id="38c52ce4-ef5f-442f-bee5-504a1f2af61c"
-        name="ISearchDB"
+        name="ISearchResultDB"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -3283,7 +3378,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="f82fa72a-e257-4a09-b348-afb1d71a1c38"
             name="_id"
@@ -3295,7 +3397,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="b855270f-c1ab-4e22-98bc-51a33ca6e59c"
             name="Topic"
@@ -3306,10 +3415,18 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="609cde77-ed60-40fe-bddb-576dd7eea924"
+                LastKnownName="string"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="7dc01f5c-27ed-42cf-b96b-4504d591c4df"
             name="_topic"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3317,9 +3434,414 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="609cde77-ed60-40fe-bddb-576dd7eea924"
+                LastKnownName="string"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e5d2c074-a859-4141-bfdd-15ec0f9113c1"
+            name="Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3"
+                LastKnownName="DateTime"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a3eb842a-017b-484a-9c26-2fbd73f5aa22"
+            name="_date"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3"
+                LastKnownName="DateTime"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1a1a212a-b728-4d19-b747-7203c65de5cd"
+            name="SearchResults"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1500c9a5-bd78-421b-998a-65d83cf97879"
+                LastKnownName="List&lt;SearchResult&gt;"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0f5a2532-b581-4b9a-b13e-4adc70a9e919"
+        name="SearchDB : "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ff097053-18c4-4ab0-afa2-dd995b8fe1e2">
+            <interfaceMoniker
+              Id="9c2094df-fc48-49ae-8e36-0603d74c833e"
+              LastKnownName="ISearchDB"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="0450fa9a-caea-4c52-87a1-ec8049bb5c20">
+            <classMoniker
+              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+              LastKnownName="DIManager"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="84019501-0586-4855-b455-c48cdff03c31"
+            isDerived="false"
+            sourceEndRoleName="SearchDB : "
+            targetEndRoleName="SentimentAnalyzerContext::DBContext"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="295b9596-bced-4830-8104-ff9c3a83ba8b"
+              LastKnownName="SentimentAnalyzerContext::DBContext"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7e3054b-bae2-49b8-8a6f-3c54e226532b"
+                  name="SearchDB : "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b55bdb0-7ab2-4976-8910-d57707e54450"
+                  name="SentimentAnalyzerContext::DBContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c7c1ddb6-aedf-40f1-95d0-7b163f653282"
+            name="dbContext"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="db7ff8be-5839-4a75-999e-a97b38ddf59d"
+                LastKnownName="SentimentAnalyzerContext"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="414f7956-3e2f-41a4-aa98-a3006040a5fa"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be530b7b-233c-4cd5-a7ff-038c5da0f9b1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
+                      LastKnownName="Result"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0d6ad17-3430-47d5-8099-60b398cabe3d"
+                  name="Search search"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="faee6916-c30c-405a-86ba-6f8d56eef0e2"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f483599d-6d99-40b4-84df-19732b606079"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d00234e2-eb13-40ca-859e-1dc2798d7e41"
+                  name="Search search"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7ab151e2-2e4e-41e7-9a4a-3f68b675d042"
+            name="Retrieve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48d2f1ac-c448-413f-8742-1222e4c7f042"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
+                      LastKnownName="Result"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7049a20a-a256-492a-84fe-917615669c63"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4087bf74-eb14-4f85-948b-051915cba3c6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d38a82e0-0d0b-42b4-a9cf-4f31bc2a3a7d"
+                  name="Result result"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9c2094df-fc48-49ae-8e36-0603d74c833e"
+        name="ISearchDB"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="87ec6705-bcd5-478d-8bca-fee7217bcc06"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94d90a3f-41c4-4a54-923a-74af1bf359c9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
+                      LastKnownName="Result"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d03157bb-8379-470e-9074-7eae3579cd5e"
+                  name="Search search"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="824760d4-a1a6-45bd-9f75-6fa9a335ac23"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2fa4c0c0-eb5e-4773-82dc-bfac8d1bcd47"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04997ef2-dd07-4764-a144-dd3263571ece"
+                  name="Search search"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4007e715-ea48-42ed-a4a4-cd9f0cbf1065"
+            name="Retrieve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2911b026-f047-4770-86b8-cd0b11332689"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
+                      LastKnownName="Result"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="08f588d9-e850-4dfa-89c1-1a57a213a0e0"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08bac438-faf5-43d6-9e72-cf7cfdba50d6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0bf9525d-d8fa-4ec1-aa81-7e843e3c1e16"
+                  name="Result result"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
+        name="Result" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
