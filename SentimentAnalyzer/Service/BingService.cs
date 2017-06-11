@@ -72,7 +72,7 @@ namespace SentimentAnalyzer.Service
 
                 SearchResult result = new SearchResult();
 
-                result.ID = obj.id;
+                result.BingID = obj.id;
                 result.Title = obj.name;
                 result.Url = obj.url;
                 result.Description = obj.snippet;

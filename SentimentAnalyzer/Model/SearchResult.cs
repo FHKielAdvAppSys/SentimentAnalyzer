@@ -24,9 +24,9 @@ namespace SentimentAnalyzer.Model
             }
         }
 
-        private int _bingID;
+        private string _bingID;
 
-        public int BingID
+        public string BingID
         {
             get
             {

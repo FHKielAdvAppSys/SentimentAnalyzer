@@ -1,5 +1,6 @@
 ﻿using SentimentAnalyzer.Core;
 using SentimentAnalyzer.Model;
+using SentimentAnalyzer.DB;
 using SentimentAnalyzer.Service;
 using SentimentAnalyzer.ViewModel;
 using System;
@@ -29,6 +30,8 @@ namespace SentimentAnalyzer
             DIManager.Instance.Register<IBingService, BingService>(LifeCycle.Singletone);
             DIManager.Instance.Register<MainVM, MainVM>(LifeCycle.Singletone);
             DIManager.Instance.Register<ISearchVM, SearchVM>(LifeCycle.Singletone);
+            DIManager.Instance.Register<ISearchResultDB, SearchResultDB>(LifeCycle.Singletone);
+            DIManager.Instance.Register<ISearchDB, SearchDB>(LifeCycle.Singletone);
         }
 
         /// <summary>

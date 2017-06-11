@@ -2,6 +2,7 @@
 using Microsoft.Practices.Prism.Mvvm;
 using SentimentAnalyzer.Core;
 using SentimentAnalyzer.Model;
+using SentimentAnalyzer.DB;
 using SentimentAnalyzer.Service;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,17 @@ namespace SentimentAnalyzer.ViewModel
             }
         }
 
+        private Search _currentsearch;
+        public Search CurrentSearch
+        {
+            get { return _currentsearch; }
+            set
+            {
+                SetProperty(ref _currentsearch, value);
+            }
+        }
+
+
         public SearchVM() : base()
         {
             SearchCommand = new DelegateCommand(() =>
@@ -49,7 +61,32 @@ namespace SentimentAnalyzer.ViewModel
         private void Search(string Topic)
         {
             IBingService bingService = DIManager.Instance.Resolve<IBingService>();
-            Results = bingService.Search(Topic);
+            List<SearchResult> BingResults = bingService.Search(Topic);
+
+            ISearchDB searchDB = DIManager.Instance.Resolve<ISearchDB>();
+
+            Search search = new Search();
+            search.Topic = this.Topic;
+            search.Date = DateTime.Now;
+
+            CurrentSearch = searchDB.Create(search);
+
+            List<SearchResult> searchResultlist = new List<SearchResult>();
+            foreach (SearchResult result in BingResults)
+            {
+                SearchResult searchResult = new SearchResult();
+                searchResult.SearchID = CurrentSearch.ID;
+                searchResult.BingID = result.BingID;
+                searchResult.Title = result.Title;
+                searchResult.Url = result.Url;
+                searchResult.Description = result.Description;
+                searchResultlist.Add(searchResult);
+            }
+            ISearchResultDB searchResultDB = DIManager.Instance.Resolve<ISearchResultDB>();
+            Results = searchResultDB.Create(searchResultlist);
+
+
+           
         }
     }
 }
