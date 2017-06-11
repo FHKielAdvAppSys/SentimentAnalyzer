@@ -95,6 +95,7 @@
     <Compile Include="Core\DIManager.cs" />
     <Compile Include="Core\IBingService.cs" />
     <Compile Include="Core\ISearchVM.cs" />
+    <Compile Include="Model\Search.cs" />
     <Compile Include="Model\SearchResult.cs" />
     <Compile Include="Service\BingService.cs" />
     <Compile Include="ViewModel\MainVM.cs" />
