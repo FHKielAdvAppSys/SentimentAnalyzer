@@ -39,6 +39,19 @@ namespace SentimentAnalyzer.Model
             }
         }
 
+        private Search _search;
+        public Search Search
+        {
+            get
+            {
+                return _search;
+            }
+            set
+            {
+                SetProperty(ref _search, value);
+            }
+        }
+
         private string _title;
         public string Title
         {

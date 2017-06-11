@@ -33,5 +33,27 @@ namespace SentimentAnalyzer.Model
                 SetProperty(ref _topic, value);
             }
         }
+
+        private List<SearchResult> _searchResults;
+        public List<SearchResult> SearchResults
+        {
+            get { return _searchResults; }
+            set
+            {
+                SetProperty(ref _searchResults, value);
+            }
+        }
+
+        private DateTime _date;
+
+        public DateTime Date
+        {
+            get { return _date; }
+            set
+            {
+                SetProperty(ref _date, value);
+            }
+
+        }
     }
 }
