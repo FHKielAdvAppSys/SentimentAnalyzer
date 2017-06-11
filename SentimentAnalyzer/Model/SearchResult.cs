@@ -39,18 +39,7 @@ namespace SentimentAnalyzer.Model
             }
         }
 
-        private Search _search;
-        public Search Search
-        {
-            get
-            {
-                return _search;
-            }
-            set
-            {
-                SetProperty(ref _search, value);
-            }
-        }
+        public virtual Search Search { get; set; }
 
         private string _title;
         public string Title
