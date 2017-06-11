@@ -1081,8 +1081,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
-                LastKnownName="int"
+                Id="269fc9c2-127d-4d90-9a23-7c38d032db56"
+                LastKnownName="integer"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -1100,8 +1100,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
-                LastKnownName="int"
+                Id="269fc9c2-127d-4d90-9a23-7c38d032db56"
+                LastKnownName="integer"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -3381,8 +3381,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
-                LastKnownName="int"
+                Id="269fc9c2-127d-4d90-9a23-7c38d032db56"
+                LastKnownName="integer"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -3400,8 +3400,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
-                LastKnownName="int"
+                Id="269fc9c2-127d-4d90-9a23-7c38d032db56"
+                LastKnownName="integer"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -3509,7 +3509,7 @@
       <class
         Id="0f5a2532-b581-4b9a-b13e-4adc70a9e919"
         name="SearchDB : "
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
@@ -3606,16 +3606,16 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
-                      LastKnownName="Result"
+                    <classMoniker
+                      Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7"
+                      LastKnownName="Search"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c0d6ad17-3430-47d5-8099-60b398cabe3d"
+                  Id="80a235fd-d3a3-4da5-980d-616f8d038d6d"
                   name="Search search"
                   direction="In"
                   isUnique="false" />
@@ -3668,9 +3668,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
-                      LastKnownName="Result"
+                    <classMoniker
+                      Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7"
+                      LastKnownName="Search"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -3701,8 +3701,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="d38a82e0-0d0b-42b4-a9cf-4f31bc2a3a7d"
-                  name="Result result"
+                  Id="54e962ec-d289-469e-ad9d-830a0409999e"
+                  name="Search search"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -3842,6 +3842,11 @@
       <undefinedType
         Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
         name="Result" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="269fc9c2-127d-4d90-9a23-7c38d032db56"
+        name="integer" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
