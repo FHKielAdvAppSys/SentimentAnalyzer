@@ -267,13 +267,13 @@
           <property Id="e1dde4ea-f584-44ea-b128-29143ea6846f" name="BingID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="10b7164d-e47f-4d86-a21a-102cee08f7b5" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+              <referencedTypeMoniker Id="6bdbd86b-e5fe-46c7-b919-f82228e14a62" LastKnownName="integer" />
             </type_NamedElement>
           </property>
           <property Id="fb63ed22-277c-4060-9d3c-e2b0f7c40875" name="bingID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1af956bd-221d-4fe6-9494-ea2c8809c997" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+              <referencedTypeMoniker Id="4df81c42-eb66-41b7-9191-6a5d8dab1059" LastKnownName="integer" />
             </type_NamedElement>
           </property>
           <property Id="2939c5cc-fda3-4fdc-b6ff-137913b62ee0" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -328,7 +328,7 @@
             </appliedStereotypesInternal>
             <elementDefinition Id="baf2ded3-e9b3-48f8-a3f8-128103762e94" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="4f4294b0-477c-441a-8958-428839d80d76" LastKnownName="Search" />
+              <referencedTypeMoniker Id="6870a719-242e-45a4-b706-1475d328400c" LastKnownName="Search" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1285,13 +1285,13 @@
           <property Id="b68d5ea8-e820-49c8-a157-54aa463aa8ef" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="270938de-67cf-42a6-86a4-b84a6cbc3c51" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+              <referencedTypeMoniker Id="99152cb4-3a77-4bc2-bb6f-eb1567d5838f" LastKnownName="integer" />
             </type_NamedElement>
           </property>
           <property Id="e3b07180-5340-4828-92de-5657ec693822" name="_id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f82fa72a-e257-4a09-b348-afb1d71a1c38" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+              <referencedTypeMoniker Id="03552fd4-f0fb-4f89-a7e9-eb46ba25aacf" LastKnownName="integer" />
             </type_NamedElement>
           </property>
           <property Id="38d2404e-cc3e-42e3-bcc4-95da538eae6c" name="Topic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1348,11 +1348,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
-        <elementDefinition Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="6d4a0979-7bd6-4c45-be7a-24eae696edb8" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
         <elementDefinition Id="609cde77-ed60-40fe-bddb-576dd7eea924" />
       </referencedType>
@@ -1362,13 +1357,8 @@
         <elementDefinition Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3" />
       </referencedType>
     </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="4f4294b0-477c-441a-8958-428839d80d76" name="Search" isAbstract="false" isLeaf="false" cachedFullName="Modeling::Search">
-        <elementDefinition Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ee5cb5ae-278b-400f-9364-524a7ed618ac" name="SearchDB : " isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ee5cb5ae-278b-400f-9364-524a7ed618ac" name="SearchDB : " isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0f5a2532-b581-4b9a-b13e-4adc70a9e919" />
         <suppliersInternal>
           <interfaceRealization Id="d6bf5aa2-c68c-4b6f-9b30-0d1b60ca88d0">
@@ -1414,13 +1404,13 @@
                 <parameter Id="41f2ef10-9821-49ff-8ced-dace34db278a" direction="Return" isUnique="false">
                   <elementDefinition Id="be530b7b-233c-4cd5-a7ff-038c5da0f9b1" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="32c5df99-b57e-499b-9466-07704ae18f00" LastKnownName="Result" />
+                    <referencedTypeMoniker Id="9fdd7855-bb04-4b5c-9316-fdec2c762d6f" LastKnownName="Search" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="6f394d03-3f06-48ec-9054-dd1cc4a6b966" name="Search search" direction="In" isUnique="false">
-                  <elementDefinition Id="c0d6ad17-3430-47d5-8099-60b398cabe3d" />
+                <parameter Id="26466b74-bf88-4fcc-acda-dd2c62f17e29" name="Search search" direction="In" isUnique="false">
+                  <elementDefinition Id="80a235fd-d3a3-4da5-980d-616f8d038d6d" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1450,7 +1440,7 @@
                 <parameter Id="55fef235-f11c-4575-acb2-770fab9ceb1d" direction="Return" isUnique="false">
                   <elementDefinition Id="48d2f1ac-c448-413f-8742-1222e4c7f042" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="32c5df99-b57e-499b-9466-07704ae18f00" LastKnownName="Result" />
+                    <referencedTypeMoniker Id="9fdd7855-bb04-4b5c-9316-fdec2c762d6f" LastKnownName="Search" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1468,8 +1458,8 @@
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="b046b3df-bbd1-4f73-92f6-b851172bedc0" name="Result result" direction="In" isUnique="false">
-                  <elementDefinition Id="d38a82e0-0d0b-42b4-a9cf-4f31bc2a3a7d" />
+                <parameter Id="e39fa598-328d-4f80-be93-c5b29f7d61c5" name="Search search" direction="In" isUnique="false">
+                  <elementDefinition Id="54e962ec-d289-469e-ad9d-830a0409999e" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1562,11 +1552,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="32c5df99-b57e-499b-9466-07704ae18f00" name="Result" isAbstract="false" isLeaf="false" cachedFullName="Result">
-        <elementDefinition Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="84503ecd-7f3e-4def-90e0-014057a32f32" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
         <elementDefinition Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474" />
       </referencedType>
@@ -1574,6 +1559,31 @@
     <packageHasNamedElement>
       <referencedType Id="c174e141-a8d6-44a2-8010-51b8c8796760" name="SentimentAnalyzerContext" isAbstract="false" isLeaf="false" cachedFullName="SentimentAnalyzerContext">
         <elementDefinition Id="db7ff8be-5839-4a75-999e-a97b38ddf59d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6870a719-242e-45a4-b706-1475d328400c" name="Search" isAbstract="false" isLeaf="false" cachedFullName="Modeling::Search">
+        <elementDefinition Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6bdbd86b-e5fe-46c7-b919-f82228e14a62" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="269fc9c2-127d-4d90-9a23-7c38d032db56" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4df81c42-eb66-41b7-9191-6a5d8dab1059" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="269fc9c2-127d-4d90-9a23-7c38d032db56" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="03552fd4-f0fb-4f89-a7e9-eb46ba25aacf" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="269fc9c2-127d-4d90-9a23-7c38d032db56" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="99152cb4-3a77-4bc2-bb6f-eb1567d5838f" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="269fc9c2-127d-4d90-9a23-7c38d032db56" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
