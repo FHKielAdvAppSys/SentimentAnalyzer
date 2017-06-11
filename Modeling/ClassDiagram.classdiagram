@@ -266,6 +266,70 @@
           </property>
           <property Id="e1dde4ea-f584-44ea-b128-29143ea6846f" name="BingID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="10b7164d-e47f-4d86-a21a-102cee08f7b5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="fb63ed22-277c-4060-9d3c-e2b0f7c40875" name="bingID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1af956bd-221d-4fe6-9494-ea2c8809c997" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="2939c5cc-fda3-4fdc-b6ff-137913b62ee0" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b823140d-c7ab-498e-9e00-e1abf4bec29e" name="TextTemplateBindings" profile="TextTemplateBindings">
+                <elementDefinition Id="9179656f-d4e8-4680-871e-e789245d59da" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6b54ffd1-4d84-4f2d-bcb8-cdf15290b907">
+                    <propertyInstance Id="a0a362a7-a5ae-4cff-b166-47709535a3ff" name="Alias">
+                      <elementDefinition Id="594dfb8e-4cb8-422a-beff-72f79335b350" />
+                    </propertyInstance>
+                    <elementDefinition Id="9d9fda19-a97e-4e85-befa-f8a22fc94676" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="edefb502-6e6d-4c8d-a764-27d58dad410b">
+                    <propertyInstance Id="ea52482e-2425-41b8-ab97-72db2b835ec2" name="TemplateFilePath">
+                      <elementDefinition Id="f8085d97-cc6f-419d-8056-6e1f5dbbff10" />
+                    </propertyInstance>
+                    <elementDefinition Id="ae99e0f2-64dd-438c-8d3e-efc86405c914" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="429ddcb3-5af8-40ac-af69-219d2274fc07">
+                    <propertyInstance Id="7735097a-cd0e-4335-a851-7b7b86a398c3" name="ProjectPath">
+                      <elementDefinition Id="ae3edda3-373d-4b4e-813e-7663d6a798ea" />
+                    </propertyInstance>
+                    <elementDefinition Id="1845032f-b7cf-46b5-8831-e3a3b34a0b0f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c3128a6-e8f5-4657-a11e-18edf36a446d">
+                    <propertyInstance Id="7a5b3b30-39aa-4a5f-8f08-865794ee7a1a" name="TargetDirectory">
+                      <elementDefinition Id="cd42fab0-e354-427f-852e-5f3c50bc87f5" />
+                    </propertyInstance>
+                    <elementDefinition Id="2b284720-771e-4023-bb41-08c0c22ad632" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="76507bc9-f1cd-437b-8785-ef02fac88ff6">
+                    <propertyInstance Id="273ef351-d2d2-4b97-bec3-6740ca78a1b7" name="TargetName">
+                      <elementDefinition Id="19f36b08-7431-4497-b563-581be76f662d" />
+                    </propertyInstance>
+                    <elementDefinition Id="984de358-a52f-4dea-9bb0-b8df25755ec2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73425010-a8af-4bf3-8311-e3e38163396d">
+                    <propertyInstance Id="6b399ed5-19ad-4312-b9b2-3bd9606e3bfb" name="Overwrite">
+                      <elementDefinition Id="2ee9bb0c-f79a-41fd-8355-647729bcffcc" />
+                    </propertyInstance>
+                    <elementDefinition Id="03440831-db67-4cf8-8c7f-b6f707f8cfa0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="943545ca-cb02-4f77-90c0-dc5a0bb29219">
+                    <propertyInstance Id="89977bd7-ab29-4a1f-b112-977479188ba0" name="Parameters">
+                      <elementDefinition Id="60dbc09b-562b-4929-9247-0f50336812a8" />
+                    </propertyInstance>
+                    <elementDefinition Id="1e6a50a4-0129-457c-b390-43fb85afc483" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="baf2ded3-e9b3-48f8-a3f8-128103762e94" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4f4294b0-477c-441a-8958-428839d80d76" LastKnownName="Search" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -1220,15 +1284,45 @@
         <ownedAttributesInternal>
           <property Id="b68d5ea8-e820-49c8-a157-54aa463aa8ef" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="270938de-67cf-42a6-86a4-b84a6cbc3c51" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+            </type_NamedElement>
           </property>
           <property Id="e3b07180-5340-4828-92de-5657ec693822" name="_id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f82fa72a-e257-4a09-b348-afb1d71a1c38" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" LastKnownName="int" />
+            </type_NamedElement>
           </property>
           <property Id="38d2404e-cc3e-42e3-bcc4-95da538eae6c" name="Topic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b855270f-c1ab-4e22-98bc-51a33ca6e59c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6d4a0979-7bd6-4c45-be7a-24eae696edb8" LastKnownName="string" />
+            </type_NamedElement>
           </property>
-          <property Id="dbfa95e2-c714-45f5-aba7-a98a78fd8516" name="_topic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="dbfa95e2-c714-45f5-aba7-a98a78fd8516" name="_topic" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7dc01f5c-27ed-42cf-b96b-4504d591c4df" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6d4a0979-7bd6-4c45-be7a-24eae696edb8" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="00c6a84e-4e8e-4c30-a157-a800a1c8c6a0" name="Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5d2c074-a859-4141-bfdd-15ec0f9113c1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="69372bfa-6ab0-4560-be72-2d683a2944ce" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="a0777456-2bc6-4245-92c0-74573ca9bac8" name="_date" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a3eb842a-017b-484a-9c26-2fbd73f5aa22" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="69372bfa-6ab0-4560-be72-2d683a2944ce" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="a1cb84f8-2cda-4314-8939-2822be7f9e52" name="SearchResults" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a1a212a-b728-4d19-b747-7203c65de5cd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d523dd3c-63c6-4dd1-b78b-244a6d188f53" LastKnownName="List&lt;SearchResult&gt;" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -1251,6 +1345,26 @@
     <packageHasNamedElement>
       <referencedType Id="b0c9f5bd-7452-4387-828b-351954f4fb3a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0aa9e6d0-0c15-4403-9f67-272e32011abe" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6d4a0979-7bd6-4c45-be7a-24eae696edb8" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="609cde77-ed60-40fe-bddb-576dd7eea924" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="69372bfa-6ab0-4560-be72-2d683a2944ce" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4f4294b0-477c-441a-8958-428839d80d76" name="Search" isAbstract="false" isLeaf="false" cachedFullName="Modeling::Search">
+        <elementDefinition Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
