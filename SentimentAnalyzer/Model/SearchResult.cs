@@ -39,6 +39,8 @@ namespace SentimentAnalyzer.Model
             }
         }
 
+        public virtual Search Search { get; set; }
+
         private string _title;
         public string Title
         {

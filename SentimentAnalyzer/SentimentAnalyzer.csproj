@@ -94,7 +94,12 @@
     </ApplicationDefinition>
     <Compile Include="Core\DIManager.cs" />
     <Compile Include="Core\IBingService.cs" />
+    <Compile Include="Core\ISearchDB.cs" />
+    <Compile Include="Core\ISearchResultDB.cs" />
     <Compile Include="Core\ISearchVM.cs" />
+    <Compile Include="DB\SearchDB.cs" />
+    <Compile Include="DB\SearchResultDB.cs" />
+    <Compile Include="DB\SentimentAnalyzerContext.cs" />
     <Compile Include="Model\Search.cs" />
     <Compile Include="Model\SearchResult.cs" />
     <Compile Include="Service\BingService.cs" />
