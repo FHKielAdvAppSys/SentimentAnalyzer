@@ -1078,7 +1078,102 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1af956bd-221d-4fe6-9494-ea2c8809c997"
+            name="bingID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="baf2ded3-e9b3-48f8-a3f8-128103762e94"
+            name="Search"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9179656f-d4e8-4680-871e-e789245d59da"
+                name="TextTemplateBindings"
+                profile="TextTemplateBindings">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d9fda19-a97e-4e85-befa-f8a22fc94676">
+                    <propertyInstance
+                      Id="594dfb8e-4cb8-422a-beff-72f79335b350"
+                      name="Alias" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae99e0f2-64dd-438c-8d3e-efc86405c914">
+                    <propertyInstance
+                      Id="f8085d97-cc6f-419d-8056-6e1f5dbbff10"
+                      name="TemplateFilePath" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1845032f-b7cf-46b5-8831-e3a3b34a0b0f">
+                    <propertyInstance
+                      Id="ae3edda3-373d-4b4e-813e-7663d6a798ea"
+                      name="ProjectPath" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b284720-771e-4023-bb41-08c0c22ad632">
+                    <propertyInstance
+                      Id="cd42fab0-e354-427f-852e-5f3c50bc87f5"
+                      name="TargetDirectory" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="984de358-a52f-4dea-9bb0-b8df25755ec2">
+                    <propertyInstance
+                      Id="19f36b08-7431-4497-b563-581be76f662d"
+                      name="TargetName" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03440831-db67-4cf8-8c7f-b6f707f8cfa0">
+                    <propertyInstance
+                      Id="2ee9bb0c-f79a-41fd-8355-647729bcffcc"
+                      name="Overwrite" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e6a50a4-0129-457c-b390-43fb85afc483">
+                    <propertyInstance
+                      Id="60dbc09b-562b-4929-9247-0f50336812a8"
+                      name="Parameters" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7"
+                LastKnownName="Search"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -3283,7 +3378,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="f82fa72a-e257-4a09-b348-afb1d71a1c38"
             name="_id"
@@ -3295,7 +3397,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dd10fe9-3983-41c4-bbfb-f2a064be2dbf"
+                LastKnownName="int"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="b855270f-c1ab-4e22-98bc-51a33ca6e59c"
             name="Topic"
@@ -3306,10 +3415,18 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="609cde77-ed60-40fe-bddb-576dd7eea924"
+                LastKnownName="string"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="7dc01f5c-27ed-42cf-b96b-4504d591c4df"
             name="_topic"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3317,9 +3434,76 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="609cde77-ed60-40fe-bddb-576dd7eea924"
+                LastKnownName="string"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e5d2c074-a859-4141-bfdd-15ec0f9113c1"
+            name="Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3"
+                LastKnownName="DateTime"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a3eb842a-017b-484a-9c26-2fbd73f5aa22"
+            name="_date"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3"
+                LastKnownName="DateTime"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1a1a212a-b728-4d19-b747-7203c65de5cd"
+            name="SearchResults"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1500c9a5-bd78-421b-998a-65d83cf97879"
+                LastKnownName="List&lt;SearchResult&gt;"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c1760456-c62c-4da7-9dd9-a1d7cd705ca3"
+        name="DateTime" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
