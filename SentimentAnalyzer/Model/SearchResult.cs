@@ -9,6 +9,21 @@ namespace SentimentAnalyzer.Model
 {
     public class SearchResult : BindableBase
     {
+        private int _id;
+
+        public int ID
+        {
+            get
+            {
+                return _id;
+            }
+
+            set
+            {
+                SetProperty(ref _id, value);
+            }
+        }
+
         private int _searchID;
 
         public int SearchID

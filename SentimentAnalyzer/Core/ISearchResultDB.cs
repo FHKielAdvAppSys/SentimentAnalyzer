@@ -10,8 +10,8 @@ namespace SentimentAnalyzer.Core
     public interface ISearchResultDB
     {
         List<SearchResult> Create(List<SearchResult> searchResults);
-        bool Delete(List<SearchResult> searchResults);
-        List<SearchResult> Retrieve();
+        IEnumerable<SearchResult> Delete(List<SearchResult> searchResults);
+        List<SearchResult> Retrieve(int searchID);
         bool Update(List<SearchResult> searchResults);
     }
 }

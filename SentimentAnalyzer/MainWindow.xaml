@@ -11,14 +11,22 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="5"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Label Grid.Row="0">Topic</Label>
         <TextBox x:Name="txtTopic" Grid.Row="1" Text="{Binding SearchVM.Topic, UpdateSourceTrigger=PropertyChanged}"/>
         <Button x:Name="btnAnalyzeSentiment" Grid.Row="2" Command="{Binding Path=SearchVM.SearchCommand}" Content="Search"/>
-        <Label Grid.Row="3" Content="{Binding SearchVM.CurrentSearch.Topic}"></Label>
-        <Label Grid.Row="4" Content="{Binding SearchVM.CurrentSearch.Date}"></Label>
-        <DataGrid Name="dgrSearchResult" Grid.Row="5" ItemsSource="{Binding Path=SearchVM.Results}"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Label>Search Topic : </Label>
+            <Label Content="{Binding SearchVM.CurrentSearch.Topic}"></Label>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal">
+            <Label>Search Date : </Label>
+            <Label Content="{Binding SearchVM.CurrentSearch.Date}"></Label>
+        </StackPanel>
+        <DataGrid Name="dgrSearchResult" Grid.Row="6" ItemsSource="{Binding Path=SearchVM.Results}"/>
     </Grid>
 </Window>

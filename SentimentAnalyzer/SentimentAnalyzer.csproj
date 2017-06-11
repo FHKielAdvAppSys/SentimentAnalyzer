@@ -100,6 +100,11 @@
     <Compile Include="DB\SearchDB.cs" />
     <Compile Include="DB\SearchResultDB.cs" />
     <Compile Include="DB\SentimentAnalyzerContext.cs" />
+    <Compile Include="Migrations\201706112220069_Initial.cs" />
+    <Compile Include="Migrations\201706112220069_Initial.Designer.cs">
+      <DependentUpon>201706112220069_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Search.cs" />
     <Compile Include="Model\SearchResult.cs" />
     <Compile Include="Service\BingService.cs" />
@@ -132,6 +137,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201706112220069_Initial.resx">
+      <DependentUpon>201706112220069_Initial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

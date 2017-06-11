@@ -10,18 +10,36 @@ namespace SentimentAnalyzer.DB
 {
     public class SearchDB : ISearchDB
     {
+        private SentimentAnalyzerContext _sentimentAnalyzerContext;
+
+        public SearchDB(SentimentAnalyzerContext sentimentAnalyzerContext)
+        {
+            _sentimentAnalyzerContext = sentimentAnalyzerContext;
+        }
+
         public Search Create(Search search)
         {
-            return new Search();
+            var result = _sentimentAnalyzerContext.Searches.Add(search);
+            _sentimentAnalyzerContext.SaveChanges();
+            return result;
         }
-        public bool Delete(Search search)
+
+        public Search Delete(Search search)
         {
-            return false;
+            var result = _sentimentAnalyzerContext.Searches.Remove(search);
+            _sentimentAnalyzerContext.SaveChanges();
+            return result;
         }
-        public Search Retrieve()
+
+        public Search Retrieve(int id)
         {
-            return new Search();
+            var searches = from s in _sentimentAnalyzerContext.Searches
+                           where s.ID == id
+                           select s;
+            var search = searches.Any() ? searches.Single() : null;
+            return search;
         }
+
         public bool Update(Search search)
         {
             return false;

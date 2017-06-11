@@ -10,8 +10,8 @@ namespace SentimentAnalyzer.Core
     public interface ISearchDB
     {
         Search Create(Search search);
-        bool Delete(Search search);
-        Search Retrieve();
+        Search Delete(Search search);
+        Search Retrieve(int id);
         bool Update(Search search);
     }
 }

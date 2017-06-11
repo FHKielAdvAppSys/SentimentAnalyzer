@@ -30,6 +30,7 @@ namespace SentimentAnalyzer
             DIManager.Instance.Register<IBingService, BingService>(LifeCycle.Singletone);
             DIManager.Instance.Register<MainVM, MainVM>(LifeCycle.Singletone);
             DIManager.Instance.Register<ISearchVM, SearchVM>(LifeCycle.Singletone);
+            DIManager.Instance.Register<SentimentAnalyzerContext, SentimentAnalyzerContext>(LifeCycle.Singletone);
             DIManager.Instance.Register<ISearchResultDB, SearchResultDB>(LifeCycle.Singletone);
             DIManager.Instance.Register<ISearchDB, SearchDB>(LifeCycle.Singletone);
         }
