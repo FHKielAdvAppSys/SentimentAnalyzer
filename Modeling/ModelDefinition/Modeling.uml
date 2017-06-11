@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="fd423be3-219d-428c-b855-245467d7244d"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -360,7 +360,45 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="64f2bf7f-9b40-442d-a10b-9f51c61be03d"
+                  Id="e515a4b9-2f36-477c-a690-d260109d4c50"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="57c27e74-8302-40cf-bf26-7c74deb7d8a3"
+                  name="topic"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8f132e5f-2029-459d-afe6-2c0daab80e71"
+            name="Search"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a762ff8f-5c8a-46c9-939c-f5362b028bc4"
                   name="topic"
                   direction="In"
                   isUnique="false">
@@ -374,13 +412,13 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e515a4b9-2f36-477c-a690-d260109d4c50"
+                  Id="b14b5168-334b-4709-a17d-9492b1cc6356"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                      LastKnownName="List&lt;SearchResult&gt;"
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -480,7 +518,7 @@
             isAbstract="false">
             <classMoniker
               Id="d2144239-836e-4886-937b-7c3267ac6ce5"
-              LastKnownName="SearchResult"
+              LastKnownName="Search"
               LastKnownLocation="Modeling.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -655,8 +693,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                LastKnownName="List&lt;SearchResult&gt;"
+                Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                LastKnownName="List&lt;Search&gt;"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -674,8 +712,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                LastKnownName="List&lt;SearchResult&gt;"
+                Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                LastKnownName="List&lt;Search&gt;"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -791,7 +829,7 @@
     <packageHasNamedElement>
       <class
         Id="d2144239-836e-4886-937b-7c3267ac6ce5"
-        name="SearchResult"
+        name="Search"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2039,7 +2077,20 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="3a1b22e9-a7bf-45bf-9292-d9aa98f22b9d"
+                  Id="61f9e70a-320d-4400-92b7-8d6fa40de915"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="87ae8987-9149-447b-bd58-227751d483ba"
                   name="topic"
                   direction="In"
                   isUnique="false">
@@ -2047,19 +2098,6 @@
                     <primitiveTypeMoniker
                       Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                       LastKnownName="String"
-                      LastKnownLocation="Modeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="61f9e70a-320d-4400-92b7-8d6fa40de915"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                      LastKnownName="List&lt;SearchResult&gt;"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -2089,8 +2127,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                LastKnownName="List&lt;SearchResult&gt;"
+                Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                LastKnownName="List&lt;Search&gt;"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -2143,8 +2181,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1500c9a5-bd78-421b-998a-65d83cf97879"
-                LastKnownName="List&lt;SearchResult&gt;"
+                Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                LastKnownName="List&lt;Search&gt;"
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -2787,6 +2825,386 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8537e2b2-1a62-4935-995b-21fb66fdea53"
+        name="SearchDB : ISearchDB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ac76e7fe-c699-40b8-9e78-c1d00a8ed826">
+            <interfaceMoniker
+              Id="38c52ce4-ef5f-442f-bee5-504a1f2af61c"
+              LastKnownName="ISearchDB"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="efa0cda9-f273-4111-8401-89e90a596ef6">
+            <classMoniker
+              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
+              LastKnownName="DIManager"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="de3ed0fb-ec09-4786-ad10-3c847c66f950"
+            isDerived="false"
+            sourceEndRoleName="SearchDB : ISearchDB"
+            targetEndRoleName="SentimentAnalyzerContext"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="295b9596-bced-4830-8104-ff9c3a83ba8b"
+              LastKnownName="SentimentAnalyzerContext::DBContext"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fd77728-c96a-40ec-bcb4-61a11f2fd6b5"
+                  name="SearchDB : ISearchDB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d8a170b-d732-4e84-a6ff-f3227e923158"
+                  name="SentimentAnalyzerContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="750f45a8-ff04-4fc9-91b1-d727c8a91179"
+            name="dbContext"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="db7ff8be-5839-4a75-999e-a97b38ddf59d"
+                LastKnownName="SentimentAnalyzerContext"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="191660c7-1722-4782-9e3c-eddd2261edb2"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94c7c9e6-a1c4-4929-a408-5b0f3b709ac3"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="307969ac-d552-40f5-9f02-ab626e04c435"
+                  name="List&lt;SearchResult&gt; searches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="25cefcb5-2db3-4d7b-af6b-4ee668a6256d"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="147c3a1c-856a-4f32-94e5-e15c953a09e7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2cb5cfae-1a7a-4d58-8f32-898f44fcddbc"
+                  name="List&lt;SearchResult&gt; searches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8cfd8bda-5152-4092-84a2-bb64c131e276"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08eec69d-6ce0-4752-a1f4-aa5f5e9d15fe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="770d2cc7-e805-48f7-91f5-2a33e369f1a2"
+                  name="List&lt;SearchResult&gt; searches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c4fd3762-e844-4191-b893-e52310f4167c"
+            name="Retrieve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fbc9a72f-0ff6-44e9-ad62-106aa5e17368"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3e3668f5-cc4d-46e1-b1d1-3ec4aa61372a"
+        name="List&lt;SearchResults&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="38c52ce4-ef5f-442f-bee5-504a1f2af61c"
+        name="ISearchDB"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="17ae6ec0-83ff-4b6a-9f3b-a170fd0bb106"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2e107a64-b602-48d8-8567-daf8fcb9b361"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a5ff7d8-dec1-4eb5-bc34-a07e6026ba70"
+                  name="List&lt;SearchResult&gt; searches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0e446cc4-f364-41f7-be5f-a182b482b64d"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7169ed2e-fd53-4f02-8bb1-16a232026ade"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="07d68031-e9ff-427b-b48c-cc36abc3ee7b"
+                  name="List&lt;SearchResult&gt; searches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8dec522c-6ccd-4566-9662-d4b98b357d7e"
+            name="Retrieve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee01fe78-5abe-48b4-9470-ab6adff67139"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="07880643-d762-4128-9f14-4ed21667a5c6"
+                      LastKnownName="List&lt;Search&gt;"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="617cf26c-7c14-4c9f-8796-716fe8111de1"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ce1aed24-544e-43ba-8cb8-5728f4efa322"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
+                      LastKnownName="bool"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71ac700e-4127-48b6-8950-f60eb241e28b"
+                  name="List&lt;SearchResult&gt; searches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="07880643-d762-4128-9f14-4ed21667a5c6"
+        name="List&lt;Search&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="295b9596-bced-4830-8104-ff9c3a83ba8b"
+        name="SentimentAnalyzerContext::DBContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6ea43e5b-028c-4392-9486-d702e1fb4654"
+            name="DBSet&lt;Search&gt; Searches"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1a163038-7331-4196-93a9-2cf66f4959b7"
+        name="Modeling::SentimentAnalyzerContext" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="db7ff8be-5839-4a75-999e-a97b38ddf59d"
+        name="SentimentAnalyzerContext" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
