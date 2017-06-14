@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>ClassDiagram.classdiagram</DependentUpon>
     </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="UseCaseDiagram.usecasediagram">
       <SubType>Content</SubType>
     </Content>
