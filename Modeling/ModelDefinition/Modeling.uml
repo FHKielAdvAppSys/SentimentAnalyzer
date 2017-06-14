@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="fd423be3-219d-428c-b855-245467d7244d"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -3968,22 +3968,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="b3da594f-e1b0-4852-b860-094375cc39b5"
-            name="MessageOccurrenceSpecification19">
-            <covered>
-              <lifelineMoniker
-                Id="0d344617-f387-41ba-82e4-50b614ebe55d"
-                LastKnownName="BingService"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="7da8bd6c-214e-48d5-8e92-591d09da5b62"
             name="MessageOccurrenceSpecification20">
             <covered>
               <lifelineMoniker
                 Id="7814d3cf-7525-41b7-8653-25af230688ff"
                 LastKnownName="SearchVM"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b3da594f-e1b0-4852-b860-094375cc39b5"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="0d344617-f387-41ba-82e4-50b614ebe55d"
+                LastKnownName="BingService"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -4154,22 +4154,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="76bb704c-e12f-4a04-ad5b-4fa178b57a6d"
-            name="MessageOccurrenceSpecification32">
-            <covered>
-              <lifelineMoniker
-                Id="34b17d17-ed30-49c9-b5d2-8c36a487fb52"
-                LastKnownName="SearchDB"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="3cd3b55f-c765-45ea-803d-4878f925a44c"
             name="MessageOccurrenceSpecification31">
             <covered>
               <lifelineMoniker
                 Id="74974f37-4940-4890-81bc-ffdc410bade2"
                 LastKnownName="SentimentAnalyzerContext"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="76bb704c-e12f-4a04-ad5b-4fa178b57a6d"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="34b17d17-ed30-49c9-b5d2-8c36a487fb52"
+                LastKnownName="SearchDB"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -4454,22 +4454,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="4fcb16bd-371b-4ee7-bbec-3c7204cb8939"
-            name="MessageOccurrenceSpecification3">
-            <covered>
-              <lifelineMoniker
-                Id="7814d3cf-7525-41b7-8653-25af230688ff"
-                LastKnownName="SearchVM"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="442c5763-753b-4465-9329-d4bd92c9c05a"
             name="MessageOccurrenceSpecification4">
             <covered>
               <lifelineMoniker
                 Id="e6dc624f-bc75-443d-8c31-5ef171c0fbbb"
                 LastKnownName="User"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4fcb16bd-371b-4ee7-bbec-3c7204cb8939"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="7814d3cf-7525-41b7-8653-25af230688ff"
+                LastKnownName="SearchVM"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -4954,6 +4954,256 @@
       <executionEvent
         Id="02307f45-2cbe-4950-9834-53ff40fdd304"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6d40240c-091d-4afb-ab58-cfd6bbcab370"
+        name="MainVM"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="3953e16c-c8f4-4bdc-994a-e9ae1d6ab630"
+            name="SearchVM"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="e40eca35-e284-4bca-a7e5-5f85a73a8fc2"
+                LastKnownName="Component6"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface
+            Id="c24908f0-a2a0-447d-b40a-88308771bdf4"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fb1ffa0d-6a23-4f2c-a3f2-2cb907745714"
+                LastKnownName="CRUD Search"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="7186e740-8ab3-46a4-906b-376d7be40ad1"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="770c5d0e-d21b-4fff-bf6b-5e145d72fdb0"
+                LastKnownName="CRUD SearchResult"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="b3d51a9c-20d7-4fb1-a0f5-f705e65ec6cf"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="58dc658e-6a0c-43d5-b31a-f7066750f7b7"
+                LastKnownName="Search Topic"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e40eca35-e284-4bca-a7e5-5f85a73a8fc2"
+        name="Component6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dccd366b-e0fd-4579-b07d-c5a4510679e2"
+        name="SearchDB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="0a578ade-b544-49ba-a30f-201619956eb4"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="35e64cd6-74b6-4be4-b7f7-733a9853aba0"
+                LastKnownName="CRUD Search"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="692f4e81-0ee5-4403-a4cb-def9b297c887"
+        name="SearchResultDB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="ae56b51b-2b5d-42ad-9aeb-42db3417bb60"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2ea0d2b3-e8db-45e7-96c7-17c002269041"
+                LastKnownName="CRUD SearchResult"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3a31cc1f-149e-4c24-a12d-352905b6a884"
+        name="BingService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="0a3fb34d-bfbf-4006-8348-9bdf07708765"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="4687d178-3556-48a2-8769-0061e225aad0"
+                LastKnownName="Search Topic"
+                LastKnownLocation="Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="76058d8b-f0be-40ae-8146-6aa8caa1f85d"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="54e338ae-a76a-4d96-ad14-70853a85ffc3">
+            <componentMoniker
+              Id="6d40240c-091d-4afb-ab58-cfd6bbcab370"
+              LastKnownName="MainVM"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="35e64cd6-74b6-4be4-b7f7-733a9853aba0"
+        name="CRUD Search"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2ea0d2b3-e8db-45e7-96c7-17c002269041"
+        name="CRUD SearchResult"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fb1ffa0d-6a23-4f2c-a3f2-2cb907745714"
+        name="CRUD Search"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="770c5d0e-d21b-4fff-bf6b-5e145d72fdb0"
+        name="CRUD SearchResult"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ffd5a148-abe1-433b-aaa4-77b05af571b3"
+        name="Interface8"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="58dc658e-6a0c-43d5-b31a-f7066750f7b7"
+        name="Search Topic"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4687d178-3556-48a2-8769-0061e225aad0"
+        name="Search Topic"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
