@@ -16,6 +16,8 @@ namespace SentimentAnalyzer.ViewModel
     {
         public DelegateCommand SearchCommand { get; set; }
 
+        IBingService _bingService;
+
         private String _topic;
         public String Topic
         {
@@ -47,8 +49,10 @@ namespace SentimentAnalyzer.ViewModel
             }
         }
 
-        public SearchVM() : base()
+        public SearchVM(IBingService bingService) : base()
         {
+            _bingService = bingService;
+
             SearchCommand = new DelegateCommand(() =>
             {
                 Search(Topic);
@@ -59,8 +63,7 @@ namespace SentimentAnalyzer.ViewModel
 
         private void Search(string Topic)
         {
-            IBingService bingService = DIManager.Instance.Resolve<IBingService>();
-            List<SearchResult> BingResults = bingService.Search(Topic);
+            List<SearchResult> BingResults = _bingService.Search(Topic);
 
             ISearchDB searchDB = DIManager.Instance.Resolve<ISearchDB>();
 
