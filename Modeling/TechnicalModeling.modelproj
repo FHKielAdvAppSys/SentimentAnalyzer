@@ -36,6 +36,13 @@
       <SubType>Content</SubType>
       <DependentUpon>ComponentDiagram.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="UMLSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Modeling.uml">
       <SubType>Content</SubType>
