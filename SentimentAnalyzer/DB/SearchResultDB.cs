@@ -10,38 +10,47 @@ namespace SentimentAnalyzer.DB
 {
     public class SearchResultDB : ISearchResultDB
     {
-        private SentimentAnalyzerContext _sentimentAnalyzerContext;
+        private SentimentAnalyzerContext _db;
 
         public SearchResultDB(SentimentAnalyzerContext sentimentAnalyzerContext)
         {
-            _sentimentAnalyzerContext = sentimentAnalyzerContext;
+            _db = sentimentAnalyzerContext;
         }
 
         public List<SearchResult> Create(List<SearchResult> searchResults)
         {
-            var result = _sentimentAnalyzerContext.SearchResults.AddRange(searchResults);
-            _sentimentAnalyzerContext.SaveChanges();
+            var result = _db.SearchResults.AddRange(searchResults);
+            _db.SaveChanges();
             return result.ToList();
         }
 
         public IEnumerable<SearchResult> Delete(List<SearchResult> searchResults)
         {
-            var result = _sentimentAnalyzerContext.SearchResults.RemoveRange(searchResults);
-            _sentimentAnalyzerContext.SaveChanges();
+            var result = _db.SearchResults.RemoveRange(searchResults);
+            _db.SaveChanges();
             return result;
         }
 
         public List<SearchResult> Retrieve(int searchID)
         {
-            var searchResults = from sR in _sentimentAnalyzerContext.SearchResults
-                           where sR.Search.ID == searchID
-                           select sR;
+            var searchResults = from sR in _db.SearchResults
+                                where sR.Search.ID == searchID
+                                select sR;
             return searchResults.ToList();
         }
 
         public bool Update(List<SearchResult> searchResults)
         {
-            return false;
+            searchResults.ForEach(searchResult =>
+            {
+                _db.SearchResults.Attach(searchResult);
+                var entry = _db.Entry(searchResult);
+                entry.Property(e => e.Search).IsModified = true;
+                entry.Property(e => e.Url).IsModified = true;
+                entry.Property(e => e.Title).IsModified = true;
+                entry.Property(e => e.Description).IsModified = true;
+            });
+            return _db.SaveChanges() == 1;
         }
     }
 }

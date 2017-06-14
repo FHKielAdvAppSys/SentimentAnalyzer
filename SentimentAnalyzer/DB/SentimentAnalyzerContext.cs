@@ -13,6 +13,5 @@ namespace SentimentAnalyzer.DB
         public DbSet<Search> Searches { get; set; }
 
         public DbSet<SearchResult> SearchResults { get; set; }
-
     }
 }

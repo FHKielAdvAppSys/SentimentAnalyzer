@@ -10,30 +10,30 @@ namespace SentimentAnalyzer.DB
 {
     public class SearchDB : ISearchDB
     {
-        private SentimentAnalyzerContext _sentimentAnalyzerContext;
+        private SentimentAnalyzerContext _db;
 
         public SearchDB(SentimentAnalyzerContext sentimentAnalyzerContext)
         {
-            _sentimentAnalyzerContext = sentimentAnalyzerContext;
+            _db = sentimentAnalyzerContext;
         }
 
         public Search Create(Search search)
         {
-            var result = _sentimentAnalyzerContext.Searches.Add(search);
-            _sentimentAnalyzerContext.SaveChanges();
+            var result = _db.Searches.Add(search);
+            _db.SaveChanges();
             return result;
         }
 
         public Search Delete(Search search)
         {
-            var result = _sentimentAnalyzerContext.Searches.Remove(search);
-            _sentimentAnalyzerContext.SaveChanges();
+            var result = _db.Searches.Remove(search);
+            _db.SaveChanges();
             return result;
         }
 
         public Search Retrieve(int id)
         {
-            var searches = from s in _sentimentAnalyzerContext.Searches
+            var searches = from s in _db.Searches
                            where s.ID == id
                            select s;
             var search = searches.Any() ? searches.Single() : null;
@@ -42,7 +42,11 @@ namespace SentimentAnalyzer.DB
 
         public bool Update(Search search)
         {
-            return false;
+            _db.Searches.Attach(search);
+            var entry = _db.Entry(search);
+            entry.Property(e => e.Topic).IsModified = true;
+            entry.Property(e => e.Date).IsModified = true;
+            return _db.SaveChanges() == 1;
         }
     }
 }

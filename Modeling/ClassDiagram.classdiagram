@@ -1129,7 +1129,7 @@
                 <parameter Id="42b76c28-e984-4c64-ada7-d0769f5e1772" direction="Return" isUnique="false">
                   <elementDefinition Id="08eec69d-6ce0-4752-a1f4-aa5f5e9d15fe" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="80b6f522-30d4-4a0a-8709-46f0964c0538" LastKnownName="bool" />
+                    <referencedTypeMoniker Id="d523dd3c-63c6-4dd1-b78b-244a6d188f53" LastKnownName="List&lt;SearchResult&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1190,13 +1190,13 @@
                 <parameter Id="00d1a108-b2a4-454a-b663-3dd5d80310f9" direction="Return" isUnique="false">
                   <elementDefinition Id="7169ed2e-fd53-4f02-8bb1-16a232026ade" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="3583a724-51dc-4103-a535-89ef801893d6" LastKnownName="bool" />
+                    <referencedTypeMoniker Id="d523dd3c-63c6-4dd1-b78b-244a6d188f53" LastKnownName="List&lt;SearchResult&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="687e9447-4fd6-451f-bc44-f113c4d74790" name="List&lt;SearchResult&gt; searchResults" direction="In" isUnique="false">
-                  <elementDefinition Id="e9483696-ed55-40b0-8224-574161ce09c8" />
+                <parameter Id="002b771a-45c8-4733-90e2-9f89bac16f56" name="List&lt;SearchResult&gt; searchResults" direction="In" isUnique="false">
+                  <elementDefinition Id="d797ac58-f7d0-490a-a74b-147b1eabfdc8" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1422,13 +1422,13 @@
                 <parameter Id="58ab334b-0d02-45b8-8f99-ad17ee2c75b1" direction="Return" isUnique="false">
                   <elementDefinition Id="f483599d-6d99-40b4-84df-19732b606079" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="84503ecd-7f3e-4def-90e0-014057a32f32" LastKnownName="bool" />
+                    <referencedTypeMoniker Id="9fdd7855-bb04-4b5c-9316-fdec2c762d6f" LastKnownName="Search" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="53cb4fc9-cddb-4104-a184-74c84504c31b" name="Search search" direction="In" isUnique="false">
-                  <elementDefinition Id="d00234e2-eb13-40ca-859e-1dc2798d7e41" />
+                <parameter Id="9680ebd6-22f1-4316-a4e4-d4db747373a3" name="Search search" direction="In" isUnique="false">
+                  <elementDefinition Id="8c574782-10fd-4dfe-ab0e-3c0e48cc6fab" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1496,13 +1496,13 @@
                 <parameter Id="23bf3881-21af-424f-b6ae-5ccdbd0fa93b" direction="Return" isUnique="false">
                   <elementDefinition Id="2fa4c0c0-eb5e-4773-82dc-bfac8d1bcd47" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0590ac7c-f301-42e9-acae-d57d1e78d4c4" LastKnownName="bool" />
+                    <referencedTypeMoniker Id="0fe3950f-65ea-4a2e-b023-9726317e52c3" LastKnownName="Result" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e648974b-2ad6-413b-8331-36cc9f7c6320" name="Search search" direction="In" isUnique="false">
-                  <elementDefinition Id="04997ef2-dd07-4764-a144-dd3263571ece" />
+                <parameter Id="7ed72943-e2ae-4706-8661-f96c665ce851" name="Search search" direction="In" isUnique="false">
+                  <elementDefinition Id="a1b56d55-50e1-421f-8f2e-62815aedfeb7" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>

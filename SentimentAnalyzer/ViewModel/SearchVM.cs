@@ -47,7 +47,6 @@ namespace SentimentAnalyzer.ViewModel
             }
         }
 
-
         public SearchVM() : base()
         {
             SearchCommand = new DelegateCommand(() =>

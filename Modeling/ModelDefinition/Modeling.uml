@@ -3128,8 +3128,8 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
-                      LastKnownName="bool"
+                      Id="1500c9a5-bd78-421b-998a-65d83cf97879"
+                      LastKnownName="List&lt;SearchResult&gt;"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -3234,15 +3234,15 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
-                      LastKnownName="bool"
+                      Id="1500c9a5-bd78-421b-998a-65d83cf97879"
+                      LastKnownName="List&lt;SearchResult&gt;"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e9483696-ed55-40b0-8224-574161ce09c8"
+                  Id="d797ac58-f7d0-490a-a74b-147b1eabfdc8"
                   name="List&lt;SearchResult&gt; searchResults"
                   direction="In"
                   isUnique="false" />
@@ -3637,16 +3637,16 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
-                      LastKnownName="bool"
+                    <classMoniker
+                      Id="9a5555da-3e84-47c3-a6a8-0fc32a2dddd7"
+                      LastKnownName="Search"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="d00234e2-eb13-40ca-859e-1dc2798d7e41"
+                  Id="8c574782-10fd-4dfe-ab0e-3c0e48cc6fab"
                   name="Search search"
                   direction="In"
                   isUnique="false" />
@@ -3765,15 +3765,15 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="0325aa2d-abc0-43c2-af9d-e5f1bcf2c474"
-                      LastKnownName="bool"
+                      Id="ed8c7ea7-73a6-4650-b318-6cf15ac4e9f8"
+                      LastKnownName="Result"
                       LastKnownLocation="Modeling.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="04997ef2-dd07-4764-a144-dd3263571ece"
+                  Id="a1b56d55-50e1-421f-8f2e-62815aedfeb7"
                   name="Search search"
                   direction="In"
                   isUnique="false" />

@@ -33,7 +33,7 @@ namespace SentimentAnalyzer.Model
                 SetProperty(ref _topic, value);
             }
         }
-
+            
         private List<SearchResult> _searchResults;
         public virtual List<SearchResult> SearchResults
         { get; set; }
