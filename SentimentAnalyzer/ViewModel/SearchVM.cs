@@ -17,6 +17,7 @@ namespace SentimentAnalyzer.ViewModel
         public DelegateCommand SearchCommand { get; set; }
 
         IBingService _bingService;
+        ISearchResultDB _searchResultDB;
 
         private String _topic;
         public String Topic
@@ -49,9 +50,10 @@ namespace SentimentAnalyzer.ViewModel
             }
         }
 
-        public SearchVM(IBingService bingService) : base()
+        public SearchVM(IBingService bingService, ISearchResultDB searchResultDB) : base()
         {
             _bingService = bingService;
+            _searchResultDB = searchResultDB;
 
             SearchCommand = new DelegateCommand(() =>
             {
@@ -84,11 +86,8 @@ namespace SentimentAnalyzer.ViewModel
                 searchResult.Description = result.Description;
                 searchResultlist.Add(searchResult);
             }
-            ISearchResultDB searchResultDB = DIManager.Instance.Resolve<ISearchResultDB>();
-            Results = searchResultDB.Create(searchResultlist);
 
-
-           
+            Results = _searchResultDB.Create(searchResultlist);
         }
     }
 }

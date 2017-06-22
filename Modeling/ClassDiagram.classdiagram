@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="7a6e2909-7e99-4384-a28a-a64d53c900e8" name="ClassDiagram" linkedPackageId="54e59690-a7ef-42b4-98a0-9651507162c5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="7a6e2909-7e99-4384-a28a-a64d53c900e8" name="ClassDiagram" linkedPackageId="54e59690-a7ef-42b4-98a0-9651507162c5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="23050ddf-1c74-4ae4-8fef-51b75271464d" name="BingService" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -113,21 +113,53 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="5f61f262-bfd8-4db3-8727-1570ae5f4907" />
           </association>
-          <association Id="430b4f60-12b7-4cf8-9369-6f35f1e41a38" isDerived="false" sourceEndRoleName="SearchVM" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+          <association Id="adfd7612-a068-4522-a99a-7aa7ed91a24c" isDerived="false" sourceEndRoleName="SearchVM" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
             <classMoniker Id="f26de7a0-793d-4f57-8171-b2a07ba8fb2b" LastKnownName="Search" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c7a250c6-22bb-41d3-a46e-18d0375c8b26" name="SearchVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="8e02aea9-2611-4248-89f1-4a6833e33383" />
+                <memberEnd Id="8a2a800c-4691-48e9-9160-7f36e7f40c46" name="SearchVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d1a20fdd-023c-46f6-a35d-d4109c350b23" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="27883a55-761f-4d76-9f14-4be378612f97" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="811f3b0a-fd90-4461-977b-dc3e3003967c" />
+                <memberEnd Id="bd8360e2-bc0c-4cd1-852c-c5901ad58469" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bf236917-a7e4-41e4-a1b5-3048c6ebe86b" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="649b1148-feb4-40c4-a2ce-9aa9ee5a7de5" />
+            <elementDefinition Id="ec230fcf-4d9e-4f3d-9dc9-3f01dcd1826c" />
+          </association>
+          <association Id="b7b517c5-4ef6-4d73-924c-8a5df9b5cd80" isDerived="false" sourceEndRoleName="SearchVM" targetEndRoleName="ISearchDB" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="3da6dd5d-fec3-48a9-913d-7bf5026592c6" LastKnownName="ISearchDB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73ceaaf1-4001-403d-be1b-7fd58e621b92" name="SearchVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b87e7e8-1275-4d1f-8b5e-8509d61b3e76" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bf88d7d-55da-4222-a672-8f0a7cf5c3ba" name="ISearchDB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="685702d5-50c3-46bc-814c-199fe0d7f98f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="828fbfa5-4f7d-4770-b284-a6e784a7887e" />
+          </association>
+          <association Id="ebd69d00-2035-4e6c-8c9f-ede23620c8b5" isDerived="false" sourceEndRoleName="SearchVM" targetEndRoleName="ISearchResultDB" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="ab34592d-7a29-4b09-8144-cfdf9d6bd27d" LastKnownName="ISearchResultDB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23304c33-00b5-499d-9a0b-a901592a196d" name="SearchVM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7c3b607-9696-421e-b2b1-f7f784a5448e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dade03c6-2a08-403f-b6a8-6a56286abecb" name="ISearchResultDB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc1e7f9c-c62b-4481-81ea-9eb37f80f521" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="27e3c640-3c86-451c-9075-f433c82c0e93" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -164,11 +196,6 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="f0952366-f276-4284-9831-ecb997b0b3ab" name="SearchVM" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="68f648bf-9b1f-4ab3-a844-82d8f9b0a0ec" name="create" profile="StandardProfileL2">
-                <elementDefinition Id="0607d856-0e9a-432c-8337-1f90ef0fb4e5" />
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <elementDefinition Id="f2fa1c1b-6d43-46fc-be5d-9f17e2f32bf9" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -429,11 +456,6 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="234c99b8-23f6-4966-8e6e-2289c4d20d36" name="MainVM" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="38784484-4fbd-4809-a7dd-b413c23b0dd7" name="create" profile="StandardProfileL2">
-                <elementDefinition Id="db3e6c6e-4c2b-48c8-9bc3-5e85333dcd0a" />
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <elementDefinition Id="de1216c6-8c02-4f51-a93d-99e7a559e258" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -576,29 +598,23 @@
             <enumerationMoniker Id="24270d0b-8017-4729-a690-4ecf56768d19" LastKnownName="LifeCycle" />
             <elementDefinition Id="f0794802-0de0-4429-8f89-e5349a50b9ad" />
           </dependency>
-          <dependency Id="187a6b5d-9338-45fe-b229-3b80e2d90648">
+          <dependency Id="e8b8b1f1-fcc9-416e-8412-c7487e18d932">
+            <classMoniker Id="73bc659c-e5d7-4e06-9150-557f040ddf25" LastKnownName="CastleWindsor::WindsorContainer" />
+            <elementDefinition Id="742da3cc-8617-43e3-a533-f74d9b93888b" />
+          </dependency>
+          <dependency Id="99b29060-250a-4bbf-9f1c-c208e8a8d1a1">
+            <interfaceMoniker Id="ab34592d-7a29-4b09-8144-cfdf9d6bd27d" LastKnownName="ISearchResultDB" />
+            <elementDefinition Id="07ec4783-280e-40da-a3d8-f866968ea8b3" />
+          </dependency>
+          <dependency Id="2b9fdecf-2a80-4479-b657-a939ac5ad63d">
+            <classMoniker Id="ee5cb5ae-278b-400f-9364-524a7ed618ac" LastKnownName="SearchDB :  ISearchDB" />
+            <elementDefinition Id="e0b0e9eb-d2d7-4937-9c2b-9ba3b312fead" />
+          </dependency>
+          <dependency Id="8432098e-7bf6-4e97-8845-19ef13678250">
             <classMoniker Id="77086885-3dce-40da-aa0e-036f166aa7d2" LastKnownName="CastleWindsor::Component" />
-            <elementDefinition Id="0389357e-e4a4-44a0-9431-f9da6228f3d9" />
+            <elementDefinition Id="3227d333-9622-484a-8b0e-1c1d86eb339a" />
           </dependency>
         </suppliersInternal>
-        <targetEnds>
-          <association Id="3d5e9259-f81c-4b15-9801-d4b5de79ee0d" isDerived="false" sourceEndRoleName="DIManager" targetEndRoleName="CastleWindsor::WindsorContainer" isLeaf="false" isAbstract="false">
-            <classMoniker Id="73bc659c-e5d7-4e06-9150-557f040ddf25" LastKnownName="CastleWindsor::WindsorContainer" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="035d3dde-19dd-4b0e-bb01-f9600db329df" name="DIManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="f2bb1c03-f516-4ea6-8c7a-3c5bf4472250" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2615f614-406c-408c-b4e4-03a7b43f28d2" name="CastleWindsor::WindsorContainer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="18209fc3-0680-412a-9dcc-79f149537293" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="1a73609e-2232-4385-a955-a16a2ed3f0cf" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="cd3f7beb-c463-4bba-8faa-62b65c3daf8d" name="_container" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="dffdebac-55a1-49e0-b87d-07183d635d5f" />
@@ -615,11 +631,6 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="c7be131c-6937-4fef-bfe8-bebda0fdde83" name="DIManager" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="c16c99be-c291-4b5c-b4de-b82a6e19230b" name="create" profile="StandardProfileL2">
-                <elementDefinition Id="0e1e8e94-32d5-4962-8981-cbe9f51afb69" />
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <elementDefinition Id="0f3979a5-3396-46c7-9056-8c341ff46835" />
           </operation>
           <operation Id="68939834-eb06-40cc-87cc-7fbb1bc2070a" name="Register&lt;TContract, TService&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1054,10 +1065,6 @@
             <interfaceMoniker Id="ab34592d-7a29-4b09-8144-cfdf9d6bd27d" LastKnownName="ISearchResultDB" />
             <elementDefinition Id="ac76e7fe-c699-40b8-9e78-c1d00a8ed826" />
           </interfaceRealization>
-          <dependency Id="6a44da86-4400-4fa6-8c0d-1a5c2d0d687b">
-            <classMoniker Id="3bd0bb6f-0962-41f5-951f-5a75e18a3447" LastKnownName="DIManager" />
-            <elementDefinition Id="efa0cda9-f273-4111-8401-89e90a596ef6" />
-          </dependency>
         </suppliersInternal>
         <targetEnds>
           <association Id="79598f0d-ae18-4b5f-9414-423820ed24fb" isDerived="false" sourceEndRoleName="SearchDB : ISearchDB" targetEndRoleName="SentimentAnalyzerContext" isLeaf="false" isAbstract="false">
@@ -1358,17 +1365,13 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ee5cb5ae-278b-400f-9364-524a7ed618ac" name="SearchDB : " isAbstract="true" isLeaf="false" isActiveClass="false">
+      <class Id="ee5cb5ae-278b-400f-9364-524a7ed618ac" name="SearchDB :  ISearchDB" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0f5a2532-b581-4b9a-b13e-4adc70a9e919" />
         <suppliersInternal>
           <interfaceRealization Id="d6bf5aa2-c68c-4b6f-9b30-0d1b60ca88d0">
             <interfaceMoniker Id="3da6dd5d-fec3-48a9-913d-7bf5026592c6" LastKnownName="ISearchDB" />
             <elementDefinition Id="ff097053-18c4-4ab0-afa2-dd995b8fe1e2" />
           </interfaceRealization>
-          <dependency Id="aa073cd4-8a9b-4e66-802c-6c8e8a9bfbf8">
-            <classMoniker Id="3bd0bb6f-0962-41f5-951f-5a75e18a3447" LastKnownName="DIManager" />
-            <elementDefinition Id="0450fa9a-caea-4c52-87a1-ec8049bb5c20" />
-          </dependency>
         </suppliersInternal>
         <targetEnds>
           <association Id="216d74c7-1e48-431c-8d4a-9619a533bd48" isDerived="false" sourceEndRoleName="SearchDB : " targetEndRoleName="SentimentAnalyzerContext::DBContext" isLeaf="false" isAbstract="false">
@@ -1590,18 +1593,6 @@
   <package Id="54e59690-a7ef-42b4-98a0-9651507162c5" name="Modeling">
     <elementDefinition Id="fd423be3-219d-428c-b855-245467d7244d" />
     <profileInstances>
-      <packageHasProfileInstances Id="ab98efe3-28e6-4a18-a57b-bf80199824b4">
-        <profileInstance Id="5b81b110-abcd-4356-8536-770b0d478ba0" name="StandardProfileL2">
-          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-        </profileInstance>
-        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-      </packageHasProfileInstances>
-      <packageHasProfileInstances Id="22cae704-2998-4b6c-86ae-ff32e9e8c646">
-        <profileInstance Id="bd145a83-28bf-4d69-ad0b-52eecd0c6b85" name="StandardProfileL3">
-          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-        </profileInstance>
-        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-      </packageHasProfileInstances>
       <packageHasProfileInstances Id="207ee4a8-e309-43cc-a695-5143499500dc">
         <profileInstance Id="b3284cf8-7a29-4d3a-9a4f-31b2a72ee691" name="CSharpProfile">
           <elementDefinition Id="e5965bf6-7f6a-4289-84ac-f0e2130ad1c6" />

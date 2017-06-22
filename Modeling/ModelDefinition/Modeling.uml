@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="fd423be3-219d-428c-b855-245467d7244d"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -629,7 +629,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="649b1148-feb4-40c4-a2ce-9aa9ee5a7de5"
+            Id="ec230fcf-4d9e-4f3d-9dc9-3f01dcd1826c"
             isDerived="false"
             sourceEndRoleName="SearchVM"
             targetEndRoleName="Search"
@@ -642,21 +642,99 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="8e02aea9-2611-4248-89f1-4a6833e33383"
+                  Id="d1a20fdd-023c-46f6-a35d-d4109c350b23"
                   name="SearchVM"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="811f3b0a-fd90-4461-977b-dc3e3003967c"
+                  Id="bf236917-a7e4-41e4-a1b5-3048c6ebe86b"
                   name="Search"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="828fbfa5-4f7d-4770-b284-a6e784a7887e"
+            isDerived="false"
+            sourceEndRoleName="SearchVM"
+            targetEndRoleName="ISearchDB"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="9c2094df-fc48-49ae-8e36-0603d74c833e"
+              LastKnownName="ISearchDB"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b87e7e8-1275-4d1f-8b5e-8509d61b3e76"
+                  name="SearchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="685702d5-50c3-46bc-814c-199fe0d7f98f"
+                  name="ISearchDB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="27e3c640-3c86-451c-9075-f433c82c0e93"
+            isDerived="false"
+            sourceEndRoleName="SearchVM"
+            targetEndRoleName="ISearchResultDB"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="38c52ce4-ef5f-442f-bee5-504a1f2af61c"
+              LastKnownName="ISearchResultDB"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7c3b607-9696-421e-b2b1-f7f784a5448e"
+                  name="SearchVM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc1e7f9c-c62b-4481-81ea-9eb37f80f521"
+                  name="ISearchResultDB"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1901,54 +1979,34 @@
               LastKnownLocation="Modeling.uml" />
           </dependency>
           <dependency
-            Id="0389357e-e4a4-44a0-9431-f9da6228f3d9">
+            Id="742da3cc-8617-43e3-a533-f74d9b93888b">
+            <classMoniker
+              Id="331f8730-1eea-47b3-bc40-a9ee6eeccdde"
+              LastKnownName="CastleWindsor::WindsorContainer"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="07ec4783-280e-40da-a3d8-f866968ea8b3">
+            <interfaceMoniker
+              Id="38c52ce4-ef5f-442f-bee5-504a1f2af61c"
+              LastKnownName="ISearchResultDB"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="e0b0e9eb-d2d7-4937-9c2b-9ba3b312fead">
+            <classMoniker
+              Id="0f5a2532-b581-4b9a-b13e-4adc70a9e919"
+              LastKnownName="SearchDB :  ISearchDB"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="3227d333-9622-484a-8b0e-1c1d86eb339a">
             <classMoniker
               Id="a0d9832e-da3c-40d3-9bce-99d7f6c35da8"
               LastKnownName="CastleWindsor::Component"
               LastKnownLocation="Modeling.uml" />
           </dependency>
         </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="1a73609e-2232-4385-a955-a16a2ed3f0cf"
-            isDerived="false"
-            sourceEndRoleName="DIManager"
-            targetEndRoleName="CastleWindsor::WindsorContainer"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="331f8730-1eea-47b3-bc40-a9ee6eeccdde"
-              LastKnownName="CastleWindsor::WindsorContainer"
-              LastKnownLocation="Modeling.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f2bb1c03-f516-4ea6-8c7a-3c5bf4472250"
-                  name="DIManager"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="18209fc3-0680-412a-9dcc-79f149537293"
-                  name="CastleWindsor::WindsorContainer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="dffdebac-55a1-49e0-b87d-07183d635d5f"
@@ -2924,13 +2982,6 @@
               LastKnownName="ISearchResultDB"
               LastKnownLocation="Modeling.uml" />
           </interfaceRealization>
-          <dependency
-            Id="efa0cda9-f273-4111-8401-89e90a596ef6">
-            <classMoniker
-              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
-              LastKnownName="DIManager"
-              LastKnownLocation="Modeling.uml" />
-          </dependency>
         </suppliersInternal>
         <targetEnds>
           <association
@@ -3292,11 +3343,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
-        Id="1a163038-7331-4196-93a9-2cf66f4959b7"
-        name="Modeling::SentimentAnalyzerContext" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
         Id="db7ff8be-5839-4a75-999e-a97b38ddf59d"
         name="SentimentAnalyzerContext" />
     </packageHasNamedElement>
@@ -3453,8 +3499,8 @@
     <packageHasNamedElement>
       <class
         Id="0f5a2532-b581-4b9a-b13e-4adc70a9e919"
-        name="SearchDB : "
-        isAbstract="true"
+        name="SearchDB :  ISearchDB"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
@@ -3465,13 +3511,6 @@
               LastKnownName="ISearchDB"
               LastKnownLocation="Modeling.uml" />
           </interfaceRealization>
-          <dependency
-            Id="0450fa9a-caea-4c52-87a1-ec8049bb5c20">
-            <classMoniker
-              Id="c6796fe2-7c9f-49fa-a01b-f91c8ab0036e"
-              LastKnownName="DIManager"
-              LastKnownLocation="Modeling.uml" />
-          </dependency>
         </suppliersInternal>
         <targetEnds>
           <association
@@ -4962,6 +5001,29 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6d1681e0-e904-4975-8876-5e3f5da64e3c">
+            <providedInterfaceMoniker
+              Id="0a578ade-b544-49ba-a30f-201619956eb4"
+              LastKnownName="Port1"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="7d09d599-5e98-4121-97c2-fe87eaf67ba0">
+            <providedInterfaceMoniker
+              Id="ae56b51b-2b5d-42ad-9aeb-42db3417bb60"
+              LastKnownName="Port1"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="42492517-f00c-4c8d-b1e4-6c76ffb45e32">
+            <providedInterfaceMoniker
+              Id="0a3fb34d-bfbf-4006-8348-9bdf07708765"
+              LastKnownName="Port1"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <part
             Id="3953e16c-c8f4-4bdc-994a-e9ae1d6ab630"
@@ -4980,63 +5042,6 @@
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </part>
-          <requiredInterface
-            Id="c24908f0-a2a0-447d-b40a-88308771bdf4"
-            name="Port1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="fb1ffa0d-6a23-4f2c-a3f2-2cb907745714"
-                LastKnownName="CRUD Search"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </requiredInterface>
-          <requiredInterface
-            Id="7186e740-8ab3-46a4-906b-376d7be40ad1"
-            name="Port2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="770c5d0e-d21b-4fff-bf6b-5e145d72fdb0"
-                LastKnownName="CRUD SearchResult"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </requiredInterface>
-          <requiredInterface
-            Id="b3d51a9c-20d7-4fb1-a0f5-f705e65ec6cf"
-            name="Port3"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="58dc658e-6a0c-43d5-b31a-f7066750f7b7"
-                LastKnownName="Search Topic"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -5055,6 +5060,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ce25420e-63e6-4bc3-8976-1c4cf71f5770">
+            <componentMoniker
+              Id="761bbcfb-0a72-42ae-b328-e0f47fbfe502"
+              LastKnownName="SentimentAnalyzerContext"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <providedInterface
             Id="0a578ade-b544-49ba-a30f-201619956eb4"
@@ -5085,6 +5099,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="03991067-3cbd-4f64-b2d3-682529421881">
+            <componentMoniker
+              Id="761bbcfb-0a72-42ae-b328-e0f47fbfe502"
+              LastKnownName="SentimentAnalyzerContext"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <providedInterface
             Id="ae56b51b-2b5d-42ad-9aeb-42db3417bb60"
@@ -5204,6 +5227,14 @@
         name="Search Topic"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="761bbcfb-0a72-42ae-b328-e0f47fbfe502"
+        name="SentimentAnalyzerContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

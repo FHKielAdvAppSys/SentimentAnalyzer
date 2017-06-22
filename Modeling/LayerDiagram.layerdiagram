@@ -3,17 +3,10 @@
   <layers>
     <layer Id="a95e3358-005e-42e4-b26c-b9ba5ee0b1d7" name="Presentation Layer">
       <childLayers>
-        <layer Id="bf4976cf-4313-4435-bd6a-1effcbb941a7" name="MainWindow.xaml">
+        <layer Id="680a9bec-d8bc-4663-8320-796847ffc922" name="View">
           <dependencyToLayers>
-            <dependencyFromLayerToLayer Id="b3846b7b-4988-46e5-a226-57ac2c29839c" direction="Forward">
-              <layerMoniker Id="995e50ab-a20b-43c3-b2b7-ffadadb9a573" />
-            </dependencyFromLayerToLayer>
-          </dependencyToLayers>
-        </layer>
-        <layer Id="95c9ae03-1609-4446-9218-f0b8592d1e75" name="App.xaml">
-          <dependencyToLayers>
-            <dependencyFromLayerToLayer Id="6a657cf5-4785-4e80-807b-2aafb5f15560" direction="Forward">
-              <layerMoniker Id="bf4976cf-4313-4435-bd6a-1effcbb941a7" />
+            <dependencyFromLayerToLayer Id="6965a671-af5b-4ab0-8ddf-6c8996f437a6" direction="Bidirectional">
+              <layerMoniker Id="87ce1348-3fd3-4bce-96a0-2906d4864370" />
             </dependencyFromLayerToLayer>
           </dependencyToLayers>
         </layer>
@@ -21,25 +14,25 @@
     </layer>
     <layer Id="edb0d03d-93a8-4fce-8cf6-a73c1451b3ce" name="Business Layer&#xD;&#xA;">
       <childLayers>
-        <layer Id="cd58667a-158c-4f1a-b95f-be4c2c353928" name="MainVM">
-          <childLayers>
-            <layer Id="995e50ab-a20b-43c3-b2b7-ffadadb9a573" name="SearchVM">
-              <dependencyToLayers>
-                <dependencyFromLayerToLayer Id="03165416-abbb-4770-95c5-0bf8cc3c847b" direction="Forward">
-                  <layerMoniker Id="bf4976cf-4313-4435-bd6a-1effcbb941a7" />
-                </dependencyFromLayerToLayer>
-                <dependencyFromLayerToLayer Id="6f49e8a8-7d2a-476d-b8b4-9909f80b83fc" direction="Forward">
-                  <layerMoniker Id="ebad6860-2278-4b06-8edd-8dbb32e70cd6" />
-                </dependencyFromLayerToLayer>
-              </dependencyToLayers>
-            </layer>
-          </childLayers>
+        <layer Id="87ce1348-3fd3-4bce-96a0-2906d4864370" name="View Model">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="18ac455e-c9e0-445e-a746-eeb82fa435f4" direction="Forward">
+              <layerMoniker Id="f9839975-825f-4589-9907-5abd759c33bb" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
         </layer>
-        <layer Id="7c360b99-1a65-4b34-b972-010c5c06d41b" name="Core&#xD;&#xA;">
-          <childLayers>
-            <layer Id="ebad6860-2278-4b06-8edd-8dbb32e70cd6" name="BingService&#xD;&#xA;" />
-          </childLayers>
+        <layer Id="90517d81-111d-4ee4-94fb-f01584c02e33" name="Model">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="78f5b228-4448-4ae8-85b9-9c7f48d4958b" direction="Bidirectional">
+              <layerMoniker Id="87ce1348-3fd3-4bce-96a0-2906d4864370" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
         </layer>
+      </childLayers>
+    </layer>
+    <layer Id="f9839975-825f-4589-9907-5abd759c33bb" name="Database Layer">
+      <childLayers>
+        <layer Id="78381528-73fe-452e-95c0-12d2ea459958" name="Entity Framework" />
       </childLayers>
     </layer>
   </layers>
