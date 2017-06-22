@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="fd423be3-219d-428c-b855-245467d7244d"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -3292,11 +3292,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
-        Id="1a163038-7331-4196-93a9-2cf66f4959b7"
-        name="Modeling::SentimentAnalyzerContext" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
         Id="db7ff8be-5839-4a75-999e-a97b38ddf59d"
         name="SentimentAnalyzerContext" />
     </packageHasNamedElement>
@@ -4962,6 +4957,29 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6d1681e0-e904-4975-8876-5e3f5da64e3c">
+            <providedInterfaceMoniker
+              Id="0a578ade-b544-49ba-a30f-201619956eb4"
+              LastKnownName="Port1"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="7d09d599-5e98-4121-97c2-fe87eaf67ba0">
+            <providedInterfaceMoniker
+              Id="ae56b51b-2b5d-42ad-9aeb-42db3417bb60"
+              LastKnownName="Port1"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="42492517-f00c-4c8d-b1e4-6c76ffb45e32">
+            <providedInterfaceMoniker
+              Id="0a3fb34d-bfbf-4006-8348-9bdf07708765"
+              LastKnownName="Port1"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <part
             Id="3953e16c-c8f4-4bdc-994a-e9ae1d6ab630"
@@ -4980,63 +4998,6 @@
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </part>
-          <requiredInterface
-            Id="c24908f0-a2a0-447d-b40a-88308771bdf4"
-            name="Port1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="fb1ffa0d-6a23-4f2c-a3f2-2cb907745714"
-                LastKnownName="CRUD Search"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </requiredInterface>
-          <requiredInterface
-            Id="7186e740-8ab3-46a4-906b-376d7be40ad1"
-            name="Port2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="770c5d0e-d21b-4fff-bf6b-5e145d72fdb0"
-                LastKnownName="CRUD SearchResult"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </requiredInterface>
-          <requiredInterface
-            Id="b3d51a9c-20d7-4fb1-a0f5-f705e65ec6cf"
-            name="Port3"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="58dc658e-6a0c-43d5-b31a-f7066750f7b7"
-                LastKnownName="Search Topic"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -5055,6 +5016,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ce25420e-63e6-4bc3-8976-1c4cf71f5770">
+            <componentMoniker
+              Id="761bbcfb-0a72-42ae-b328-e0f47fbfe502"
+              LastKnownName="SentimentAnalyzerContext"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <providedInterface
             Id="0a578ade-b544-49ba-a30f-201619956eb4"
@@ -5085,6 +5055,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="03991067-3cbd-4f64-b2d3-682529421881">
+            <componentMoniker
+              Id="761bbcfb-0a72-42ae-b328-e0f47fbfe502"
+              LastKnownName="SentimentAnalyzerContext"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <providedInterface
             Id="ae56b51b-2b5d-42ad-9aeb-42db3417bb60"
@@ -5204,6 +5183,14 @@
         name="Search Topic"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="761bbcfb-0a72-42ae-b328-e0f47fbfe502"
+        name="SentimentAnalyzerContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
