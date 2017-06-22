@@ -67,17 +67,20 @@ namespace SentimentAnalyzer.Service
             dynamic responseObj = JsonConvert.DeserializeObject(response);
 
             //Mapping of Response Object to searchResult 
-            foreach (var obj in responseObj.webPages.value)
+            if (responseObj.webPages != null)
             {
+                foreach (var obj in responseObj.webPages.value)
+                {
 
-                SearchResult result = new SearchResult();
+                    SearchResult result = new SearchResult();
 
-                result.BingID = obj.id;
-                result.Title = obj.name;
-                result.Url = obj.url;
-                result.Description = obj.snippet;
+                    result.BingID = obj.id;
+                    result.Title = obj.name;
+                    result.Url = obj.url;
+                    result.Description = obj.snippet;
 
-                searchResult.Add(result);
+                    searchResult.Add(result);
+                }
             }
 
             return searchResult;
