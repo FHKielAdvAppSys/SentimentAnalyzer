@@ -255,7 +255,7 @@
           <association
             Id="c90f8d58-7c67-4243-a2b0-d05709355e75"
             isDerived="false"
-            sourceEndRoleName="serachVM"
+            sourceEndRoleName="serach"
             targetEndRoleName="searchResult"
             isLeaf="false"
             isAbstract="false">
@@ -267,7 +267,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="6b147e7a-6440-487f-b66b-89ca5801ef83"
-                  name="serachVM"
+                  name="serach"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

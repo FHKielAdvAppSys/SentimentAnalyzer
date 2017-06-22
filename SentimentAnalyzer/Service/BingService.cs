@@ -21,7 +21,6 @@ namespace SentimentAnalyzer.Service
     /// </summary>
     class BingService : IBingService
     {
-
         // Root URL
         private const string rootUrl = "https://api.cognitive.microsoft.com/bing/v5.0/search?";
     
@@ -82,7 +81,5 @@ namespace SentimentAnalyzer.Service
 
             return searchResult;
         }
-           
-
     }
 }
